@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: gmarket;
+    src: url(../font/GmarketSansTTFLight.woff);
+}
+footer{height: 200px; background-color: #434556; color: #D8D8D8; font-size: 14px;}
+footer ul li{ list-style: none; font-family: gmarket; text-align: center; }
+.footer--logo{padding: 20px 0 10px; margin-left: 50%;transform: translate(-50%);}
+.footer--logo img{margin-left: 50%;transform: translate(-50%);}
+footer span{ margin-left: 20px;}
+

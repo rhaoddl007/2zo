@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도쿄디즈니랜드</title>
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset/reset.css">
+    <!-- 파비콘 -->
+    <link rel="icon" href="./imgs/common/icon.svg">
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 헤더 CSS -->
+    <link rel="stylesheet" href="./css/common/Disney-header.css">
+    <!-- 메인 CSS -->
+    <link rel="stylesheet" href="./css/main/Disney-main.css">
+
+    <!-- main slider CDN -->
+    <link rel="stylesheet" href="./css/main/slick-theme.css">
+    <link rel="stylesheet" href="./css/main/slick.css">
+
+    <!--  animate-->
+    <link rel="stylesheet" href="./css/main/animate.min.css">
+
+    <!-- scrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!--  푸터 -->
+    <link rel="stylesheet" href="./css/common/index.css">
+
+
+
+</head>
+<!-- header 시작 -->
+<header>
+    <a class="header--logo" href="#"><img src="./imgs/main/header-logo.png" alt="헤더로고"></a>
+    <!-- header menu 시작 -->
+    <nav>
+        <ul class="main--menu">
+            <li>
+                <a class="menuname--one" href="#">파크 티켓</a> <!-- 1차 메뉴 -->
+                <ul class="sub--menu"> <!-- 2차 메뉴 -->
+                    <li><a href="#">티켓 가격</a></li>
+                    <li><a href="#">티켓 구매 방법</a></li>
+                    <li><a href="#">티켓 유의사항</a></li>
+                </ul>
+            </li>
+
+            <li><a class="menuname--two" href="">파크 가이드</a>
+                <ul class="sub--menu">
+                    <li><a href="#">운영/운휴</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">Guide Map</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="menuname--three" href="#">즐길 거리</a>
+                <ul class="sub--menu">
+                    <li><a href="#">어트랙션</a></li>
+                    <li><a href="#">레스토랑</a></li>
+                    <li><a href="#">Shop & Goods</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">고객센터</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- header--util 시작 -->
+    <div class="header--util">
+        <!-- SNS BAR 시작 -->
+        <div class="header--sns">
+            <a href="https://twitter.com/disneyland"><img src="./imgs/main/Twitter.svg" alt=""></a>
+            <a href="https://www.instagram.com/disneyland/"><img src="./imgs/main/Instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/Disneyland/"><img src="./imgs/main/facebook.svg" alt=""></a>
+        </div>
+        <button class="login--btn"><img src="./imgs/main/loginimg.svg" alt=""></button>
+        <div class="util--line"></div>
+
+    </div>
+    <!-- util(lang) 시작 -->
+    <div class="util--box">
+        <ul><button class="util--lang">KR
+                <!-- <i class="xi-caret-down-min"></i> -->
+                <div class="util--triangle"></div>
+            </button>
+            <li class="util--li1"><a href="">EN</a></li>
+            <li><a href="">CN</a></li>
+            <li><a href="">JP</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- 메인 슬라이드 시작 -->
+<section class="slide--section">
+    <div><img src="./imgs/main/main-slide(1).webp" alt="메인슬라이드이미지(1)"></div>
+    <div><img src="./imgs/main/main-slide(2).jpg" alt="메인슬라이드이미지(2)"></div>
+    <div><img src="./imgs/main/main-slide(3).webp" alt="메인슬라이드이미지(3)"></div>
+    <div><img src="./imgs/main/main-slide(4).webp" alt="메인슬라이드이미지(4)"></div>
+</section>
+<!-- 메모리 섹션 시작 -->
+<section class="memory--section">
+    <div class="memory--line"><img src="./imgs/main/main--memory--line.svg" alt="메모리라인"></div>
+    <div class="memory-main-img"><img src="./imgs/main/memory-main-img.png" alt="메모리섹션 로고"></div>
+    <!-- scroll-spy를 이용한 애니메이션 효과 -->
+    <div class="mermory--section--box1 scroll-spy">
+        <img class="memoryS-leftimg1 back-to-positon to-right delay-2" src="./imgs/main/memory-img(1).svg"
+            alt="메모리사진(1)">
+        <img class="memoryS-righttext1 back-to-positon to-up delay-3" src="./imgs/main/memory-img-text(1).svg"
+            alt="메모리사진(1)-텍스트(1)">
+    </div>
+    <div class="mermory--section--box2 scroll-spy">
+        <img class="memoryS-lefttext2 back-to-positon to-up delay-3" src="./imgs/main/memory-img-text(2).svg"
+            alt="메모리사진(2)-텍스트(2)">
+        <img class="memoryS-rightimg2 back-to-positon to-left delay-2" src="./imgs/main/memory-img(2).svg"
+            alt="메모리사진(2)">
+    </div>
+
+    <div class="memory--maintext scroll-spy">
+        <img class="back-to-positon delay-2" src="./imgs/main/memory--text(3).svg" alt="메모리섹션 마지막 큰 텍스트이미지">
+    </div>
+    <!-- up, down을 이용한 전체적인 카드 위치 조절 -->
+    <div class="memory--card">
+        <img class="card card1 card--down" src="./imgs/main/memory-card(1).svg" alt="카드1">
+        <img class="card card2 card--up" src="./imgs/main/memory-card(2).svg" alt="카드2">
+        <img class="card card3 card--down" src="./imgs/main/memory-card(3).svg" alt="카드3">
+        <img class="card card4 card--up" src="./imgs/main/memory-card(4).svg" alt="카드4">
+        <img class="card card5 card--down" src="./imgs/main/memory-card(5).svg" alt="카드5">
+    </div>
+</section>
+<!-- info 시작 / id로 위치값을 받아 섹션으로 이동 -->
+<section class="info--section" id="info--one">
+    <span>정보를 한눈에 쏙!</span>
+    <div class="info--box">
+        <div class="info--leftbox">
+            <div class="info--attraction">
+                <a href=""><img src="./imgs/main/info-attraction.svg" alt="어트랙션 이미지"></a>
+                <p>어트랙션</p>
+            </div>
+        </div>
+        <div class="info--rightbox">
+            <div class="info--parkguide">
+                <a href="#"><img src="./imgs/main/info-parkguide.png" alt="파크가이드 이미지"></a>
+                <p>파크 가이드</p>
+            </div>
+            <div class="info--enjoy">
+                <a href="#"><img src="./imgs/main/info--enjoy.png" alt="즐길거리 이미지"></a>
+                <p>즐길 거리</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 어트랙션 메인 텍스트 -->
+<div class="attraction--img" id="info--Two">
+    <p>인기 있는 어트랙션을 한번에 !</p>
+</div>
+<!-- 어트랙션 시작 -->
+<section class="attraction--rank">
+    <div class="attraction--box">
+        <div><a href=""><img src="./imgs/main/att(1).jpg" alt=""></a>
+            <p>젯의 고 코스터</p>
+        </div>
+        <div><a href=""><img src="./imgs/main/att(2).jpg" alt=""></a>
+            <p>빅 썬더 마운틴</p>
+        </div>
+        <div><a href=""><img src="./imgs/main/att(3).jpg" alt=""></a>
+            <p>캐리비안의 해적</p>
+        </div>
+        <div><a href=""><img src="./imgs/main/att(4).jpg" alt=""></a>
+            <p>베이맥스의 해피 라이드</p>
+        </div>
+    </div>
+    <img class="attbgi" src="./imgs/main/attbgi.png" alt="백그라운드이미지">
+</section>
+
+
+<!-- 굿즈 섹션 시작 -->
+<section class="friend--section">
+    <!-- id로 위치값을 받아 섹션으로 이동 -->
+    <p class="friend--text" id="info--Three">친구들을 만나봐요!</p>
+    <div class="friend--box">
+
+        <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+            <div class="card10">
+                <div class="wrapper">
+                    <!-- 커버이미지 -->
+                    <img src="./imgs/main/friend(1).jpg" class="cover-image" />
+                </div>
+                <!-- 호버이미지 -->
+                <img src="./imgs/main/pngwing.com (25).png" class="character" />
+            </div>
+        </a>
+
+        <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+            <div class="card10">
+                <div class="wrapper">
+                    <img src="./imgs/main/friend(2).jpg" class="cover-image" />
+                </div>
+                <img src="./imgs/main/friend-hover(2).png" class="character" />
+            </div>
+        </a>
+
+        <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+            <div class="card10">
+                <div class="wrapper">
+                    <img src="./imgs/main/friend(3).jpg" class="cover-image" />
+                </div>
+                <img src="./imgs/main/friend-hover(3).png" class="character" />
+            </div>
+        </a>
+
+        <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+            <div class="card10">
+                <div class="wrapper">
+                    <img src="./imgs/main/friend(4).jpg" class="cover-image" />
+                </div>
+                <img src="./imgs/main/friend-hover(4).png" class="character" />
+            </div>
+        </a>
+
+        <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+            <div class="card10">
+                <div class="wrapper">
+                    <img src="./imgs/main/friend(5).jpg" class="cover-image" />
+                </div>
+                <img src="./imgs/main/friend-hover(5).png" class="character" />
+            </div>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- 인포 시작 -->
+<section class="info--menu">
+    <!-- id값 받은 위치로 클릭시 이동 -->
+    <a href="#info--one">
+        <div class="info">information
+            <div class="info--circle circle1"></div>
+        </div>
+    </a>
+    <a href="#info--Two">
+        <div class="info">attraction
+            <div class="info--circle circle2"></div>
+        </div>
+    </a>
+    <a href="#info--Three">
+        <div class="info">Goods
+            <div class="info--circle circle3"></div>
+        </div>
+    </a>
+</section>
+
+<!-- 푸터 시작 -->
+<footer>
+    <ul>
+        <li class="footer--logo"><img src="./imgs/common/푸터logo.png" alt="푸터logo"></li>
+        <li>1-1 Maihama, Urayasu, Chiba 279-0031, Japan <span>TEL +81-45-330-5211</span></li>
+        <li> 사이트맵 개인정보 취급방침 법적제약과 사용조건 테마파크 이용약관 (영어) 저작권/상표<br>
+            주식회사 오리엔탈랜드(Oriental Land Co., Ltd.) (영어) Disney.jp(일본어)</li>
+        <li>&copy;Disney. All rights reserved.</li>
+    </ul>
+</footer>
+<!-- 헤더 js -->
+<script src="./js/main/Disney-header.js" async></script>
+<!-- jquery -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- 슬라이드 -->
+<script src="./js/jQ/main/slick.min.js"></script>
+<script src="./js/jQ/main/main-slide.js"></script>
+
+<!-- 메인페이지 슬라이드 -->
+<script src="./js/main/Disney-main.js"></script>
+<!-- 카드 이펙트 -->
+<script src="./js/jQ/main/card-effect.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketL";
+  src: url(../font/GmarketSansTTFLight.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+a {
+  display: block;
+  color: black;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+:root {
+  --color--: rgba(255, 255, 255, 0.7);
+}
+/* 헤더 시작 */
+header {
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid #333; */
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /*높이값 0.4s*/
+  transition: height 0.4s;
+  /*그라데이션을 높이값만큼 주고 이후의 높이값 색상지정*/
+  background: linear-gradient(
+    var(--color--) 100px,
+    rgba(255, 255, 255, 0.8) 1px
+  );
+  z-index: 200;
+}
+
+/* 로고 */
+header .header--logo {
+  margin-left: 138px;
+  margin-top: -11px;
+}
+/* 메뉴바 */
+nav {
+  margin-left: 165px;
+  margin-top: 48px;
+}
+nav ul li {
+  margin: 0 25px;
+  font-family: GmarketSansMedium;
+}
+nav ul li a {
+  text-align: center;
+}
+nav ul.main--menu {
+  display: flex;
+}
+nav ul.main--menu > li:nth-child(1) {
+  margin-left: 50px;
+}
+
+/* 1차메뉴 */
+.menuname--one {
+  width: 95px;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.menuname--two {
+  width: 105px;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.menuname--three {
+  width: 95px;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+/* 글씨 */
+nav ul.main--menu > li > a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  color: #333;
+  display: block;
+}
+/* 글씨 호버 */
+nav ul.main--menu > li > a:hover {
+  border-bottom: 5px solid #294083;
+}
+/* 2차메뉴 */
+nav ul.main--menu li ul.sub--menu {
+  margin-top: 12px;
+  overflow: hidden;
+}
+/* 2차메뉴 */
+nav ul.main--menu li ul.sub--menu li {
+  margin-top: 30px;
+}
+
+/* 2차메뉴 글씨 */
+nav ul.main--menu li ul.sub--menu li a {
+  font-family: GmarketSansMedium;
+  color: #757575;
+  font-size: 14px;
+}
+/* 2차메뉴 글씨 호버 */
+nav ul.main--menu li ul.sub--menu li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #454545;
+}
+/* 유틸바 */
+.header--util {
+  display: flex;
+  margin-top: 54px;
+  margin-left: 100px;
+  position: relative;
+}
+/* 유틸 SNS */
+.header--util .header--sns {
+  display: flex;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: 50px;
+}
+.header--util .header--sns a:nth-child(3) {
+  margin-top: 7px;
+}
+.header--util .header--sns a:nth-child(2) {
+  margin: 0 12px;
+}
+
+/* 로그인 버튼 */
+.header--util button.login--btn {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: -4px;
+}
+
+/* 아이콘 */
+.header--menu-icon {
+  position: absolute;
+  margin-left: 355px;
+  margin-top: -4px;
+}
+/* 유틸박스(lang) */
+div.util--box {
+  width: 120px;
+  position: fixed;
+  font-family: GmarketSansMedium;
+  margin-left: 1310px;
+  margin-top: 54px;
+  background: linear-gradient(transparent 46px, var(--color--) 1px);
+}
+.util--box ul {
+  z-index: 100;
+}
+.util--box ul button.util--lang {
+  width: 65px;
+  height: 27px;
+  font-size: 20px;
+  margin-right: 44px;
+  margin-left: 36px;
+}
+.util--box ul > li {
+  display: none;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.util--box ul:hover > li {
+  display: block;
+}
+.util--box ul > li > a {
+  color: #666;
+  font-size: 14px;
+}
+.util--box ul > li > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.util--box ul li.util--li1 {
+  margin-top: 50px;
+}
+
+.util--lang {
+  display: flex;
+}
+/* 삼각형 */
+.util--triangle {
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #333;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+/* SNS 유틸 */
+.util--line {
+  height: 25px;
+  border-left: 2px solid #828282;
+  margin-left: 220px;
+}
