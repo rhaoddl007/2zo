@@ -3,21 +3,21 @@
 /* font 설정 */
 @font-face {
   font-family: ball2;
-  src: url(/font/a발레리노.woff);
+  src: url(/2zo/font/A발레리노.woff);
 }
 @font-face {
   font-family: swgi1;
-  src: url(/font/a시월구일1.woff);
+  src: url(/2zo/font/a시월구일1.woff);
 }
 
 @font-face {
   font-family: gmarket;
-  src: url(/font/GmarketSansTTFMedium.woff);
+  src: url(/2zo/font/GmarketSansTTFMedium.woff);
 }
 
 @font-face {
   font-family: gmarket1;
-  src: url(/font/GmarketSansTTFLight.woff);
+  src: url(/2zo/font/GmarketSansTTFLight.woff);
 }
 /* 파크 티켓 전체 박스 설정 */
 
@@ -331,8 +331,6 @@ section.class--ticket .timetable tr td {
   height: 20px;
   border: 1px solid #484848;
   line-height: 20px;
-  text-align: center;
-  padding-top: 20px;
 }
 
 .timetable .bg {

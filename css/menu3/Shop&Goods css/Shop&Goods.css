@@ -3,15 +3,15 @@
 /* font 설정 */
 @font-face {
   font-family: ball2;
-  src: url(/font/a발레리노.woff);
+  src: url(/2zo/font/A발레리노.woff);
 }
 @font-face {
   font-family: swgi1;
-  src: url(/font/a시월구일1.woff);
+  src: url(/2zo/font/a시월구일1.woff);
 }
 @font-face {
   font-family: gmarket;
-  src: url(/font/GmarketSansTTFLight.woff);
+  src: url(/2zo/font/GmarketSansTTFLight.woff);
 }
 /* 파크 티켓 전체 박스 설정 */
 #wrap {
