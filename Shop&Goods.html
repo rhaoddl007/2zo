@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도쿄디즈니랜드</title>
+
+    <link rel="icon" href="./imgs/menu3/Shop&Goods imgs/icon.svg" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+
+    <!-- 효과 링크 -->
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- gshap 애니메이션 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scrollTop -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+      integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- scrollMagic -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- 링크 본문 -->
+    <link
+      rel="stylesheet"
+      href="./css/menu3/Shop&Goods css/Shop&Goods Disney-header.css"
+    />
+    <link rel="stylesheet" href="./css/menu3/Shop&Goods css/Shop&Goods.css" />
+    <link rel="stylesheet" href="./css/reset/reset.css" />
+  </head>
+  <body>
+    <!-- header 시작 -->
+    <header>
+      <a class="header--logo" href="#"
+        ><img src="./imgs/menu3/Shop&Goods imgs/logo-3 2.png" alt="헤더로고"
+      /></a>
+
+      <nav>
+        <ul class="main--menu">
+          <li>
+            <a class="menuname--one" href="#">파크 티켓</a>
+            <ul class="sub--menu">
+              <li><a href="#">티켓 가격</a></li>
+              <li><a href="#">티켓 구매 방법</a></li>
+              <li><a href="#">티켓 유의사항</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="menuname--two" href="">파크 가이드</a>
+            <ul class="sub--menu">
+              <li><a href="#">운영/운휴</a></li>
+              <li><a href="#">오시는 길</a></li>
+              <li><a href="#">Guide Map</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="menuname--three" href="#">즐길 거리</a>
+            <ul class="sub--menu">
+              <li><a href="#">어트랙션</a></li>
+              <li><a href="#">레스토랑</a></li>
+              <li><a href="#">Shop & Goods</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">고객센터</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header--util">
+        <div class="header--sns">
+          <a href="https://twitter.com/disneyland"
+            ><img src="./imgs/menu3/Shop&Goods imgs/Twitter.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/disneyland/"
+            ><img src="./imgs/menu3/Shop&Goods imgs/Instagram.svg" alt=""
+          /></a>
+          <a href="https://www.facebook.com/Disneyland/"
+            ><img src="./imgs/menu3/Shop&Goods imgs/facebook.svg" alt=""
+          /></a>
+        </div>
+        <button class="login--btn">
+          <img src="./imgs/menu3/Shop&Goods imgs/loginimg.svg" alt="" />
+        </button>
+        <div class="util--line"></div>
+        <!-- <div class="header--menu-icon"><a href=""><img src="./imgs/headermenu.svg" alt=""></a></div> -->
+      </div>
+      <div class="util--box">
+        <ul>
+          <button class="util--lang">
+            KR
+            <!-- <i class="xi-caret-down-min"></i> -->
+            <div class="util--triangle"></div>
+          </button>
+          <li class="util--li1"><a href="">EN</a></li>
+          <li><a href="">CN</a></li>
+          <li><a href="">JP</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
+    <div id="wrap">
+      <!-- 페이지 제목 -->
+      <div>
+        <p>Shop & Goods</p>
+      </div>
+      <!-- Shop 시작 -->
+      <section class="shop scroll-spy">
+        <!-- Shop 왼쪽부분 -->
+        <div class="shop--left">
+          <ul class="text--left">
+            <li class="hover1">
+              <a href="#"
+                ><img
+                  src="./imgs/menu3/Shop&Goods imgs/그랜드 엠포리엄.png"
+                  alt="그랜드 엠포리엄"
+                  class="img1 back-to-position to-right delay-1"
+              /></a>
+            </li>
+            <li>
+              <ul class="text--left1 back-to-position to-right delay-2">
+                <li class="text1">타운 센터 패션</li>
+                <li class="text2">파크 안 최대 규모의 패션 전문점</li>
+                <li class="text3">
+                  디즈니 친구들 중에서도 뛰어난 패션 센스를 자랑하는<br />미니와
+                  데이지가 경영하는 파크 안 최대 규모의 어패럴 숍입니다.<br />디즈니
+                  프린세스들도 미니와 데이지에게 드레스를 맡긴다고 하네요.<br />낭만적인
+                  분위기의 가게 안에는 멋있는 패션 아이템이 한가득!<br />미니와
+                  데이지와 함께 한껏 멋을 내 보세요.
+                </li>
+              </ul>
+            </li>
+            <li class="hover2">
+              <a href="#"
+                ><img
+                  src="./imgs/menu3/Shop&Goods imgs/토이 스테이션.png"
+                  alt="토이 스테이션"
+                  class="img3 back-to-position to-right delay-3"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Shop 오른쪽 부분 -->
+        <div class="shop--right">
+          <ul class="text--right">
+            <li>
+              <ul class="text--right1 back-to-position to-left delay-1">
+                <li class="text1">그랜드 엠포리엄</li>
+                <li class="text2">파크 안 최대 규모 선물 가게</li>
+                <li class="text3">
+                  봉제인형과 문구,착용 삼품에 이르기까지<br />다양한 상품이
+                  풍부하게 갖추어져 있는 파크 안 최대 규모의 숍.<br />사실
+                  이곳은 미키가 만든 상점으로 처음에는 작은 잡화점이었는데<br />미니와
+                  도널드를 비롯한 디즈니 친구들의 도움으로 화려한 백화점으로
+                  성장했답니다.<br />멋진 우정이 가득한 이곳에서 즐겁게 쇼핑을
+                  만끽해 보세요!
+                </li>
+              </ul>
+            </li>
+            <li class="hover3">
+              <a href="#"
+                ><img
+                  src="./imgs/menu3/Shop&Goods imgs/타운 센터 패션.png"
+                  alt="타운 센터 패션"
+                  class="img2 back-to-position to-left delay-2"
+              /></a>
+            </li>
+            <li>
+              <ul class="text--right2 back-to-position to-left delay-3">
+                <li class="text1">토이 스테이션</li>
+                <li class="text2">파크 안 최대 규모의 장난감 가게</li>
+                <li class="text3">
+                  디즈니 장난감 총집합!<br />디즈니 캐릭터 장난감이 풍부하게
+                  갖추어져 있는 장난감 전문 숍입니다.<br />양철 로켓과 비행선
+                  장난감으로 재미있게 장식된 숍 얀을 둘러보기만 해도 마음이
+                  설레어요.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Goods 시작 -->
+      <section class="goods">
+        <!-- Goods 상단 이미지 및 글 -->
+        <div>
+          <img
+            src="./imgs/menu3/Shop&Goods imgs/shop&goods 중간 이미지.png"
+            alt="shop&goods 중간 이미지"
+          />
+          <p>디즈니 굿즈를 한눈에!</p>
+        </div>
+        <!-- 굿즈 이미지 -->
+        <div class="goods__img">
+          <!-- 미키마우스 사진,모달 -->
+          <div>
+            <div id="contents">
+              <span class="text0">미키마우스</span
+              ><img
+                src="./imgs/menu3/Shop&Goods imgs/미키마우스.png"
+                alt="미키마우스"
+              />
+              <button class="modal-custom-button" href="#myModal1">
+                구매하기
+              </button>
+              <!-- 모달창 시작 -->
+              <div id="myModal1" class="modal-custom">
+                <!-- 모달내용 -->
+                <div class="modal-content">
+                  <span class="close-modal">×</span>
+                  <div class="modal-content1">
+                    <img
+                      src="./imgs/menu3/Shop&Goods imgs/미키마우스 modal.png"
+                      alt="미키마우스"
+                    />
+                    <ul>
+                      <li class="modal-text1">미키마우스 봉제인형</li>
+                      <li>¥ 4,500</li>
+                      <li>
+                        사이즈 : 앉은 높이 약 38 cm,<br />
+                        서있는 높이 약 54 cm
+                      </li>
+                      <li>
+                        누구나 좋아하는 미키 마우스의 봉제인형!<br />
+                        디즈니 파크에서의 추억을 함께♪
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="modal-buy">
+                      <div>
+                        <li class="modal-box1" id="minus" onclick="minus1()">
+                          -
+                        </li>
+                        <li class="modal-box2" id="number1">0</li>
+                        <li class="modal-box1" id="plus" onclick="plus1()">
+                          +
+                        </li>
+                      </div>
+                      <li class="modal-box3" id="total1">¥ 0</li>
+                      <li class="modal-box4">구매하기</li>
+                    </ul>
+                  </div>
+                  <div class="modal-content-under">
+                    <div class="modal-content-under__plus">
+                      * 관련 상품 더보기
+                    </div>
+                    <ul class="modal-content2">
+                      <li class="card">
+                        <div>텀블러</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/미키마우스 텀블러 .png"
+                          alt="텀블러"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>룸 향수</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/미키마우스 룸향수 .png"
+                          alt="룸향수"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>키체인 세트</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/미키마우스 키체인 .png"
+                          alt="키체인"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 미니마우스 사진,모달 -->
+          <div>
+            <div id="contents">
+              <span class="text0">미니마우스</span
+              ><img
+                src="./imgs/menu3/Shop&Goods imgs/미니마우스.png"
+                alt="미니마우스"
+              />
+              <button class="modal-custom-button" href="#myModal2">
+                구매하기
+              </button>
+              <!-- 모달창 시작 -->
+              <div id="myModal2" class="modal-custom">
+                <!-- 모달내용 -->
+                <div class="modal-content">
+                  <span class="close-modal">×</span>
+                  <div class="modal-content1">
+                    <img
+                      src="./imgs/menu3/Shop&Goods imgs/미니마우스 modal.png"
+                      alt="미니마우스"
+                    />
+                    <ul>
+                      <li class="modal-text1">미니마우스 봉제인형</li>
+                      <li>¥ 4,500</li>
+                      <li>사이즈 : (전체 길이) 높이 약 55cm</li>
+                      <li>
+                        모두 좋아하는 미니 마우스 인형!<br />
+                        안기 쉬운 사이즈입니다
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="modal-buy">
+                      <div>
+                        <li class="modal-box1" id="minus2" onclick="minus2()">
+                          -
+                        </li>
+                        <li class="modal-box2" id="number2">0</li>
+                        <li class="modal-box1" id="plus2" onclick="plus2()">
+                          +
+                        </li>
+                      </div>
+                      <li class="modal-box3" id="total2">¥ 0</li>
+                      <li class="modal-box4">구매하기</li>
+                    </ul>
+                  </div>
+                  <div class="modal-content-under">
+                    <div class="modal-content-under__plus">
+                      * 관련 상품 더보기
+                    </div>
+                    <ul class="modal-content2">
+                      <li class="card">
+                        <div>반창고</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/미니마우스 반창고.png"
+                          alt="반창고"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>유리컵</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/미니마우스 유리컵.png"
+                          alt="유리컵"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>쿠션</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/미니마우스 쿠션.png"
+                          alt="쿠션"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 도널드덕 사진,모달 -->
+          <div>
+            <div id="contents">
+              <span class="text00">도널드덕</span
+              ><img
+                src="./imgs/menu3/Shop&Goods imgs/도널드덕.png"
+                alt="도널드덕"
+              />
+              <button class="modal-custom-button" href="#myModal3">
+                구매하기
+              </button>
+              <!-- 모달창 시작 -->
+              <div id="myModal3" class="modal-custom">
+                <!-- 모달내용 -->
+                <div class="modal-content">
+                  <span class="close-modal">×</span>
+                  <div class="modal-content1">
+                    <img
+                      src="./imgs/menu3/Shop&Goods imgs/도널드덕 modal.png"
+                      alt="도널드덕"
+                    />
+                    <ul>
+                      <li class="modal-text1">도널드덕 핸드 퍼펫</li>
+                      <li>¥ 2,800</li>
+                      <li>사이즈 : 높이 약 26cm</li>
+                      <li>
+                        손을 넣고 핸드 퍼펫을 움직이면<br />
+                        도널드가 수다를 떱니다!
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="modal-buy">
+                      <div>
+                        <li class="modal-box1" id="minus3" onclick="minus3()">
+                          -
+                        </li>
+                        <li class="modal-box2" id="number3">0</li>
+                        <li class="modal-box1" id="plus3" onclick="plus3()">
+                          +
+                        </li>
+                      </div>
+                      <li class="modal-box3" id="total3">¥ 0</li>
+                      <li class="modal-box4">구매하기</li>
+                    </ul>
+                  </div>
+                  <div class="modal-content-under">
+                    <div class="modal-content-under__plus">
+                      * 관련 상품 더보기
+                    </div>
+                    <ul class="modal-content2">
+                      <li class="card">
+                        <div>인형 뱃지</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/도널드덕 봉제인형 배지.png"
+                          alt="배지"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>쿠션</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/도널드덕 쿠션.png"
+                          alt="쿠션"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>파우치</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/도널드덕 파우치.png"
+                          alt="파우치"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 머리띠 사진,모달 -->
+          <div>
+            <div id="contents">
+              <span class="text00">머리띠</span
+              ><img
+                src="./imgs/menu3/Shop&Goods imgs/헤어밴드.png"
+                alt="헤어밴드"
+              />
+              <button class="modal-custom-button" href="#myModal4">
+                구매하기
+              </button>
+              <!-- 모달창 시작 -->
+              <div id="myModal4" class="modal-custom">
+                <!-- 모달내용 -->
+                <div class="modal-content">
+                  <span class="close-modal">×</span>
+                  <div class="modal-content1">
+                    <img
+                      src="./imgs/menu3/Shop&Goods imgs/헤어밴드 modal.png"
+                      alt="헤어밴드"
+                    />
+                    <ul>
+                      <li class="modal-text1">디즈니 머리띠</li>
+                      <li>¥ 1,500</li>
+                      <li>
+                        스테디셀러 도트 리본이 달린<br />
+                        미니 카츄샤
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="modal-buy">
+                      <div>
+                        <li class="modal-box1" id="minus4" onclick="minus4()">
+                          -
+                        </li>
+                        <li class="modal-box2" id="number4">0</li>
+                        <li class="modal-box1" id="plus4" onclick="plus4()">
+                          +
+                        </li>
+                      </div>
+                      <li class="modal-box3" id="total4">¥ 0</li>
+                      <li class="modal-box4">구매하기</li>
+                    </ul>
+                  </div>
+                  <div class="modal-content-under">
+                    <div class="modal-content-under__plus">
+                      * 관련 상품 더보기
+                    </div>
+                    <ul class="modal-content2">
+                      <li class="card">
+                        <div>헤어 밴드</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/헤어 밴드1.png"
+                          alt="헤어 밴드1"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>머리띠</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/헤어 밴드2.png"
+                          alt="헤어 밴드2"
+                        />
+                      </li>
+                      <li class="card">
+                        <div>머리띠</div>
+                        <img
+                          src="./imgs/menu3/Shop&Goods imgs/헤어 밴드3.png"
+                          alt="헤어 밴드3"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 푸터 -->
+      <footer>
+        <ul>
+          <li class="footer--logo">
+            <img
+              src="./imgs/menu3/Shop&Goods imgs/푸터logo.png"
+              alt="푸터logo"
+            />
+          </li>
+          <li>
+            1-1 Maihama, Urayasu, Chiba 279-0031, Japan
+            <span>TEL +81-45-330-5211</span>
+          </li>
+          <li>
+            사이트맵 개인정보 취급방침 법적제약과 사용조건 테마파크 이용약관
+            (영어) 저작권/상표<br />
+            주식회사 오리엔탈랜드(Oriental Land Co., Ltd.) (영어)
+            Disney.jp(일본어)
+          </li>
+          <li>&copy;Disney. All rights reserved.</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- jquery.min 연결 -->
+    <script src="./js/menu3/Shop&Goods js/jquery.min.js"></script>
+    <!-- 헤더 js연결 -->
+    <script src="./js/menu3/Shop&Goods js/Disney-header.js"></script>
+
+    <!-- main js연결 -->
+    <script src="./js/menu3/Shop&Goods js/main.js"></script>
+
+    <!-- 모달 js연결 -->
+    <script src="./js/menu3/Shop&Goods js/modal.js"></script>
+  </body>
+</html>

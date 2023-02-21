@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* font 설정 */
+@font-face {
+  font-family: ball2;
+  src: url(/font/a발레리노.woff);
+}
+@font-face {
+  font-family: swgi1;
+  src: url(/font/a시월구일1.woff);
+}
+@font-face {
+  font-family: gmarket;
+  src: url(/font/GmarketSansTTFLight.woff);
+}
+/* 파크 티켓 전체 박스 설정 */
+#wrap {
+  width: 100%;
+  margin: auto;
+  height: 1600px;
+  background-color: transparent;
+  color: #484848;
+  padding-top: 300px;
+  font-size: 15px;
+  font-family: gmarket;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Shop & Goods 제목 */
+#wrap > div {
+  margin-left: 70px;
+}
+#wrap > div > p {
+  text-align: center;
+  font-size: 50px;
+  font-family: ball2;
+  width: 370px;
+  height: 55px;
+  margin: 0 auto 150px;
+  border-bottom: 3px solid #484848;
+}
+/* 가게 및 소개글 설정 */
+.shop {
+  display: flex;
+}
+.shop {
+  width: 80%;
+  height: 1300px;
+  margin: auto;
+}
+.shop--left {
+  margin-right: 60px;
+}
+.shop--right {
+  border-left: 4px solid #86bdf0;
+  padding-left: 60px;
+}
+
+/* 소개글 제목,내용 설정 */
+.text1 {
+  font-size: 30px;
+  color: #86bdf0;
+  font-family: ball2;
+  margin-bottom: 30px;
+}
+.text2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.text3 {
+  line-height: 22px;
+}
+
+.text--left .text1,
+.text--left .text2,
+.text--left .text3 {
+  text-align: right;
+  padding-left: 250px;
+}
+.text--left1 {
+  margin-top: 220px;
+  margin-bottom: 100px;
+}
+
+.text--right1 {
+  margin-top: 150px;
+}
+.text--right2 {
+  padding-top: 270px;
+}
+.text--right a {
+  padding-top: 75px;
+}
+
+/* shop left,right flex정렬 */
+.text--left {
+  display: flex;
+  height: 1150px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.text--right {
+  display: flex;
+  height: 1050px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+/* shop 애니메이션 */
+
+/* 시작은 안보이게 */
+.back-to-position {
+  opacity: 0;
+  transition: 1s;
+}
+
+/* 왼 -> 오 */
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+
+/* 오 -> 왼 */
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-1 {
+  transition-delay: 0.3s;
+}
+.show .back-to-position.delay-2 {
+  transition-delay: 0.6s;
+}
+.show .back-to-position.delay-3 {
+  transition-delay: 0.9s;
+}
+/* ---------------------------------------------- */
+
+/* 이미지 호버시 지도 위치 나오기 */
+.hover1 a {
+  position: relative;
+}
+.hover1 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/imgs/그랜드\ 엠포리엄\ map.png) no-repeat;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 100;
+}
+.hover1 a:hover::before {
+  opacity: 1;
+}
+
+.hover2 a {
+  position: relative;
+}
+.hover2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/imgs/토이\ 스테이션\ map.png) no-repeat;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 100;
+}
+.hover2 a:hover::before {
+  opacity: 1;
+}
+
+.hover3 a {
+  position: relative;
+}
+.hover3 a::before {
+  content: "";
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/imgs/타운\ 센터\ 패션\ map.png) no-repeat;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 100;
+}
+.hover3 a:hover::before {
+  opacity: 1;
+}
+
+/* goods 영역 */
+
+.goods {
+  position: relative;
+  width: 80%;
+  height: 1400px;
+  margin: 70px auto 0;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+/* goods 중간이미지 및 글 */
+.goods p {
+  font-size: 64px;
+  font-family: ball2;
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+  width: 700px;
+  height: 300px;
+  top: 250px;
+  left: 450px;
+}
+
+/* goods 이미지 */
+
+.goods__img {
+  display: flex;
+  width: 80%;
+  padding-top: 100px;
+}
+.goods__img > div {
+  padding-left: 50px;
+}
+.goods__img > div > div {
+  margin-top: 80px;
+  margin-left: 50px;
+}
+.goods__img span {
+  font-family: swgi1;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 30px;
+  padding-left: 72px;
+  padding-top: 30px;
+}
+.text0 {
+  width: 300px;
+  padding-left: 10px;
+}
+.text00 {
+  width: 300px;
+  margin-left: 15px;
+}
+#contents {
+  box-shadow: 0px -15px 10px -17px #111, 0px 15px 10px -17px #111,
+    -15px 0px 10px -17px #111, 15px 0px 10px -17px #111;
+  width: 260px;
+  background-color: #fff;
+}
+
+/*모달창*/
+
+/* 모달창 버튼 */
+.modal-custom-button {
+  margin-left: 80px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: transparent;
+  font-family: swgi1;
+  background-color: transparent;
+  font-size: 20px;
+  width: 100px;
+  color: #484848;
+  height: 50px;
+  margin-bottom: 20px;
+}
+/* 모달 구매하기 버튼 호버효과 */
+.modal-custom-button:hover {
+  background-color: #ffd662;
+  border-radius: 10px;
+  width: 100px;
+  color: #333;
+}
+.modal-custom {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* 모달창 버튼 누르기전 박스 설정 */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 250px auto 0;
+  padding: 0;
+  border: 1px solid #888;
+  width: 600px;
+  height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 40px;
+}
+/* 모달창 닫기버튼 */
+.close-modal {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+/* 모달닫기 버튼 호버효과 */
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 모달창 내용 */
+.modal-content1 {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.modal-content1 ul {
+  margin-left: 20px;
+}
+.modal-content1 ul li {
+  margin: 30px 0;
+  width: 225px;
+}
+/* 모달창 내용 굿즈 계산기 */
+.modal-buy {
+  display: flex;
+  margin: 30px 0 30px 75px;
+}
+.modal-buy > div {
+  display: flex;
+}
+.modal-buy > div li {
+  margin: 0 10px;
+}
+/* 마이너스,플러스 버튼 */
+.modal-box1 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.modal-box1:hover {
+  font-weight: bold;
+}
+/* 숫자 상자 */
+.modal-box2 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  font-family: swgi1;
+}
+.modal-box2:hover {
+  font-weight: bold;
+}
+/* 토탈 굿즈값 상자 */
+.modal-box3 {
+  width: 90px;
+  height: 30px;
+  font-family: swgi1;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 50px;
+  border: 1px solid #484848;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* 구매하기 버튼 */
+.modal-box4 {
+  width: 120px;
+  height: 40px;
+  font-family: swgi1;
+  background-color: #ffd662;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-box4:hover {
+  font-weight: bold;
+  background-color: #eca111;
+  color: #000;
+}
+/* 모달창 안 내용 관련 상품 더보기 박스 */
+.modal-content2 {
+  display: flex;
+  margin-top: 35px;
+  text-align: center;
+}
+.modal-content2 li {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.modal-content2 li img {
+  margin-left: 35px;
+}
+.modal-text1 {
+  font-size: 20px;
+  font-family: ball2;
+}
+.modal-content-under__plus {
+  padding-left: 50px;
+  font-size: 20px;
+  font-family: swgi1;
+}
+/* 모달창 안 아래 더보기 이미지 나열 */
+.card div {
+  font-size: 20px;
+  font-family: swgi1;
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+/* .card{box-shadow: 0px -15px 10px -15px #111, 0px 15px 10px -15px #111, -15px 0px 10px -15px #111, 15px 0px 10px -15px #111;} */
+
+/* 푸터영역 */
+footer {
+  height: 200px;
+  background-color: #434556;
+  color: #d8d8d8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+footer ul li {
+  list-style: none;
+  font-family: gmarket;
+  text-align: center;
+}
+.footer--logo {
+  padding: 20px 0 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.footer--logo img {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+footer span {
+  margin-left: 20px;
+}
