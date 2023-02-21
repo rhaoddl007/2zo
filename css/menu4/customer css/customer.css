@@ -3,15 +3,15 @@
 /* font 설정 */
 @font-face {
   font-family: ball2;
-  src: url(/2zo/font/A발레리노.woff);
+  src: url(/font/A발레리노.woff);
 }
 @font-face {
   font-family: swgi1;
-  src: url(/2zo/font/a시월구일1.woff);
+  src: url(/font/a시월구일1.woff);
 }
 @font-face {
   font-family: gmarket;
-  src: url(/2zo/font/GmarketSansTTFLight.woff);
+  src: url(/font/GmarketSansTTFLight.woff);
 }
 /* 파크 티켓 전체 박스 설정 */
 #wrap {
@@ -44,6 +44,7 @@
   margin: 0 auto 120px;
   width: 230px;
   border-bottom: 3px solid #484848;
+  font-weight: 100;
 }
 /* 고객 지원 상단 */
 section.customer__top {
