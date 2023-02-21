@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+/* font 설정 */
+@font-face {
+  font-family: ball2;
+  src: url(/font/a발레리노.woff);
+}
+@font-face {
+  font-family: swgi1;
+  src: url(/font/a시월구일1.woff);
+}
+
+@font-face {
+  font-family: gmarket;
+  src: url(/font/GmarketSansTTFMedium.woff);
+}
+
+@font-face {
+  font-family: gmarket1;
+  src: url(/font/GmarketSansTTFLight.woff);
+}
+/* 파크 티켓 전체 박스 설정 */
+
+#wrap {
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+  color: #484848;
+  padding-top: 300px;
+  font-size: 15px;
+  font-family: gmarket;
+}
+
+/* 파크티켓 제목 */
+#wrap h2 {
+  font-size: 50px;
+  font-family: ball2;
+  text-align: center;
+  width: 100%;
+  font-weight: 100;
+}
+#wrap > h2 > p {
+  border-bottom: 3px solid #484848;
+  width: 500px;
+  margin: 0 auto 100px;
+}
+
+/* 부제목 공통 적용 */
+.sub--title {
+  display: flex;
+  margin-top: 20px;
+}
+.sub--title p {
+  font-family: swgi1;
+  font-size: 25px;
+}
+
+/* 날짜에 따른 파크 티켓가격 */
+section.date--ticket {
+  width: 64%;
+  height: 400px;
+  margin: 30px auto 0;
+  position: relative;
+}
+
+.date--ticket h2 {
+  margin-top: 40px;
+}
+
+.sub--title p {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+section.date--ticket > div {
+  font-size: 16px;
+  padding-left: 50px;
+}
+/* 날짜별 테이블 색 표시 */
+.date__right {
+  padding-left: 690px;
+  display: flex;
+}
+.date__right span.box {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+.box__text {
+  height: 30px;
+  line-height: 30px;
+}
+.date__right span.box1 {
+  background-color: #ef705d;
+}
+.date__right span.box2 {
+  background-color: #04c2e9;
+}
+.date__right span.box3 {
+  background-color: #eca111;
+}
+.date__right span.box4 {
+  background-color: #00aa64;
+}
+
+/* 날짜 테이블 월 버튼 */
+.date--ticket__month {
+  display: inline-block;
+  font-family: swgi1;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 18px;
+}
+.date--ticket__month:first-child {
+  margin-left: 5px;
+}
+.date--ticket__month:nth-child(2) {
+  margin: 0 3px;
+}
+.calendar {
+  margin-top: 20px;
+}
+
+.date__right {
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.calendar table {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  border-collapse: collapse;
+}
+
+.calendar table tr td,
+.calendar table tr th {
+  width: 150px;
+  height: 70px;
+}
+
+.calendar table tr th {
+  text-align: center;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+
+.calendar table tr td {
+  color: #000;
+  padding: 10px 0 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* 테이블 셀별 색 */
+.table__color {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.table__color1 {
+  background-color: #ef705d;
+}
+.table__color2 {
+  background-color: #04c2e9;
+}
+.table__color3 {
+  background-color: #eca111;
+}
+.table__color4 {
+  background-color: #00aa64;
+}
+
+/* 토,일 글자색 */
+
+.text__red {
+  color: #e28262;
+}
+.text__blue {
+  color: #93cfe4;
+}
+
+/* 버튼 클릭 효과 */
+
+.is_on1 .btn1 {
+  font-weight: bold;
+  background-color: #ffd662;
+  box-shadow: 1px 1px 3px inset #484848, 1px 1px 3px #484848;
+}
+
+/* 날짜 버튼 클릭시 팝업 */
+.tab_menu1 {
+  display: flex;
+}
+.cont1 {
+  display: none;
+}
+div.is_on1 .cont1 {
+  display: block;
+}
+
+/* 테이블 중앙 맞추기 */
+.table1 {
+  padding-left: 110px;
+  padding-top: 30px;
+}
+.table2 {
+  padding-left: 55px;
+  padding-top: 30px;
+}
+.table3 {
+  padding-left: 0px;
+  padding-top: 30px;
+}
+
+/* 티켓 종류에 따른 파크 티켓가격 */
+section.class--ticket {
+  width: 64%;
+  height: 400px;
+  margin: 400px auto 150px;
+}
+
+section.class--ticket h2 {
+  font-size: 40px;
+  margin: 50px 10px;
+  margin-bottom: 80px;
+}
+section.class--ticket .tab_menu {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+section.class--ticket ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 40px auto 0;
+}
+section.class--ticket ul li a {
+  font-size: 25px;
+  font-family: swgi1;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #484848;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+/* 버튼 클릭 효과 */
+
+.is_on .btn {
+  font-weight: bold;
+  background-color: #ffd662;
+  box-shadow: 2px 2px 2px inset #333, 3px 3px 2px #333;
+  margin-bottom: 30px;
+}
+
+/* 티켓 종류에 따른 파크 티켓가격 버튼 클릭시 팝업 */
+
+.cont {
+  display: none;
+}
+li.is_on .cont {
+  display: block;
+}
+
+/* 1일권 */
+
+section.class--ticket ul.class--ticket__sub li ul.age {
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.age li:first-child {
+  margin-left: 37px;
+}
+.age li:last-child {
+  margin-right: 23px;
+}
+.age img {
+  display: block;
+  text-align: center;
+  width: 100px;
+  padding-left: 20px;
+}
+.age__text {
+  font-size: 22px;
+  font-weight: bold;
+}
+section.class--ticket ul.class--ticket__sub li ul.age li {
+  text-align: center;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 40px 60px;
+}
+
+/* 입장시간지정권 */
+
+section.class--ticket .timetable {
+  position: absolute;
+  top: 70px;
+  right: 55px;
+  width: 80%;
+  height: 220px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid #484848;
+  margin-top: 30px;
+}
+
+section.class--ticket .timetable tr th,
+section.class--ticket .timetable tr td {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #484848;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.timetable .bg {
+  background-color: rgba(134, 189, 240, 0.3);
+  height: 40px;
+  position: relative;
+  padding-left: 20px;
+}
+.timetable .bg img {
+  display: block;
+  position: absolute;
+  top: 8px;
+  height: 40px;
+}
+.timetable .bg p {
+  padding-left: 10px;
+}
+/* 장애가 있는분 전용티켓 */
+
+.disab {
+  position: absolute;
+  right: 1px;
+}
+
+/* 티켓 구매 방법 */
+
+.buy--ticket {
+  width: 80%;
+  margin: 70px auto 0;
+}
+/* 티켓 구매 방법 제목 */
+.buy--ticket h2 {
+  margin: 50px 0px 80px 180px;
+}
+/* 티켓 구매 전체 박스 */
+.buy--total {
+  display: flex;
+}
+
+/* 티켓 구매 왼쪽 부분 */
+.buy--left {
+  width: 50%;
+}
+.buy--text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-left: 220px;
+}
+
+/* 티켓 구매 왼쪽 표 */
+
+.buy--total table {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  border-collapse: collapse;
+}
+.buy--total td,
+.buy--total th {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #86bdf0;
+}
+.buy--total th {
+  background-color: rgba(134, 189, 240, 0.4);
+}
+
+/* 티켓 구매 오른쪽 부분 */
+.buy--right {
+  width: 50%;
+}
+.text__height {
+  padding-bottom: 10px;
+  margin-left: 70px;
+}
+.buy--text1 {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.buy--text1 p {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 19px;
+  color: #e15858;
+}
+.buy--right > div:last-child {
+  margin-top: 20px;
+}
+
+/* 유의사항 */
+.notice {
+  width: 72%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+.notice h2 {
+  margin: 60px 0;
+}
+.notice ul li {
+  margin: 5px 0;
+}
+
+/* 유의사항 온라인으로 변경 가능 호버 효과*/
+.notice__text {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #e15858;
+  margin-left: 5px;
+}
+.effect {
+  display: flex;
+}
+.effect a {
+  margin-left: 10px;
+}
+.effect1 {
+  position: absolute;
+  width: 42%;
+  background-color: #daebfa;
+  right: 10px;
+  display: none;
+  padding-left: 10px;
+}
+.effect a:hover .effect1 {
+  display: block;
+}
+.effect1 li.text2 {
+  display: flex;
+}
+.text2 img {
+  margin-right: 8px;
+}
+
+/* 푸터영역 */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #434556;
+  color: #d8d8d8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+footer ul li {
+  list-style: none;
+  font-family: gmarket1;
+  text-align: center;
+}
+.footer--logo {
+  padding: 20px 0 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.footer--logo img {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+footer span {
+  margin-left: 20px;
+}
