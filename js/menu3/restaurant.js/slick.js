@@ -2,20 +2,20 @@
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        items: 1,
+        margin: 10,
         nav: true,
         dots: false,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        avigationText: ["<span>❮</span>", "<span>❯</span>"]
+        items: 4,
+        loop: true,
+        navText: ["<span>◀︎</span>", "<span>▶︎</span>"]
     })
 });
-// 슬라이드 end 
+// 슬라이드 end
 
 
-// 모달 start
+//모달 start
 $(document).ready(function () {
-    $(".img").on("click", function () {
+    $(".item").on("click", function () {
         let mainImgSrc = $(this)
             .children(".main-img")
             .attr("src");
@@ -45,32 +45,3 @@ $(document).ready(function () {
 
 });
 //모달 end
-
-
-// 탭 메뉴 start
-let tabLinks = document.querySelectorAll(".tablinks");
-let tabContent = document.querySelectorAll(".tabcontent");
-
-
-tabLinks.forEach(function (el) {
-    el.addEventListener("click", openTabs);
-});
-
-
-function openTabs(el) {
-    let btnTarget = el.currentTarget;
-    let country = btnTarget.dataset.country;
-
-    tabContent.forEach(function (el) {
-    el.classList.remove("active");
-    });
-
-    tabLinks.forEach(function (el) {
-    el.classList.remove("active");
-    });
-
-    document.querySelector("#" + country).classList.add("active");
-
-    btnTarget.classList.add("active");
-}
-// 탭메뉴 end
