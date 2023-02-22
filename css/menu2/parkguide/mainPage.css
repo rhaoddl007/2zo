@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+
+*{padding:0; margin: 0;}
+
+/* img{display: block;} */
+/* 슬라이드 영역 */
+div.exam{
+    /* position: relative; */
+    padding-top: 163px;
+    width: 100%;
+    overflow:hidden;
+    
+}
+/*789*/
+.exam div img{
+    width: 100%; height: 806px;
+    max-width: 100%;
+}
+/* 슬라이드  끝 */
+
+
+.closetime-section{
+    width: 100%;
+    height: 600px;
+    /* background-color: rebeccapurple; */
+    overflow:hidden;
+}
+
+.closetime--box img{
+    border:1px solid black;
+}
+.closetime-section img{
+    padding-top: 30px;
+    width: 30%; height: 30%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    animation: fadeIn 3s;
+    
+}
+/* 추억 영역 */
+.memory--section{
+    border:1px solid red;
+    overflow:hidden;
+    position: relative;
+    background-image: url(../imgs/bgi2.svg) ;
+    background-repeat: no-repeat;
+    /* padding: 50px; */
+    /* height: 3220px; */
+    height: 5000px;
+}
+/* 시계 */
+.box{
+    width:40%;
+    height:200px;
+    float:left;
+    background-color:white; 
+    margin:25px 15px;
+    border-radius:5px;
+    /* margin-left: 50%;
+    transform: translate(-50%); */
+    left: 28%;
+  }
+  .box1{
+    background-color: #86BDF0;
+  }
+  
+  .shadow1{
+      position:relative; box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  }
+  /*****************************************************************dashed border
+  ****************************************************************/
+  .shadow1 h3{
+    margin-left:4%;
+    margin-top: 24px;
+    border:2px dashed #FFD662;
+    border-radius:5px;
+    font-size: 45px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight:600;
+    text-align:center;
+    /* padding-top:60px; */
+    color:#FFD662;
+    line-height: 70px;
+    width: 700px;
+    height: 150px;
+  
+  }
+  /****************************************************************
+  *styling shadows
+  ****************************************************************/
+  .shadow1:before, .shadow1:after{
+    position:absolute;
+    content:"";
+    bottom:12px;left:15px;top:80%;
+    width:45%;
+    background:#729fc9;
+    z-index:-1;
+    -webkit-box-shadow: 0 20px 15px #a1b8ce;
+    -moz-box-shadow: 0 20px 15px #a1b8ce;
+    box-shadow: 0 20px 15px #a1b8ce;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+  .shadow1:after{
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+    right: 15px;left: auto;
+  }
+/* .memory--section .memory--backgroundC{
+    animation: fadeIn 3s;
+    position: absolute;
+} */
+
+.memory--section .memory--img1{
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 20%;
+    animation: fadeInLeft 1s;
+    /* z-index:  */
+}
+.memory--section .memory--text1{
+    animation: fadeInDown 1s;
+    position: absolute;
+    right: 150px;
+    margin-top: 700px;
+    
+}
+.memory--section .memory--img2{
+    position: absolute;
+    margin-top: 1300px;
+    margin-left: 1200px;
+    animation: fadeInRight 1s;
+}
+
+.memory--section .memory--text2{
+    position: absolute;
+    margin-top: 1300px;
+    margin-left: 200px;
+    animation: fadeInDown 1s;
+}
+
+.memory--section .memory--img3{
+    position: absolute;
+    margin-top: 2100px;
+    margin-left: 200px;
+    animation: fadeInLeft 0.5s;
+}
+
+.memory--section .memory--img4{
+position: absolute;
+margin-top: 2250px;
+margin-left: 1400px;
+/* animation: fadeIn 1s; */
+}
+
+.memory--section .memory--img5{
+    position: absolute;
+    margin-top: 1987px;
+    margin-left: 1400px;
+    animation: fadeInUp 0.5s;
+    }
+    .memory--section .memory--img6{
+        position: absolute;
+        margin-top: 2150px;
+        margin-left: 1150px;
+        animation: fadeInRight 0.5s;
+        }
+        .memory--section .memory--img7{
+            position: absolute;
+            margin-top: 2450px;
+        margin-left: 1150px;
+        animation: fadeInRight 0.5s;
+        }
+
+        .memory--section .memory--img8{
+            position: absolute;
+            margin-top: 2900px;
+        /* margin-left: 1150px; */
+        animation: flash 0.5s;
+        }
+
+        .memory--box{
+            position: absolute;
+        display: flex;
+        overflow: visible;
+        margin-top: 3150px;
+        margin-left: -200px;
+        /* margin-left:  */
+        }
+        .memory--section .memory--img9{
+            /* position: absolute; */
+            
+            width: 450px; height: 350px;
+            
+        }
+    
+
+
+
+
+
+
+
+

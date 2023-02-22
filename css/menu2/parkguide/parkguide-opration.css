@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/* 폰트 설정 */
+@font-face {
+  font-family: "a발레리나";
+  src: url(/font/A발레리나.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a발레리노";
+  src: url(/font/A발레리노.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일1";
+  src: url(/font/a시월구일1.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일2";
+  src: url(/font/a시월구일2.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일3";
+  src: url(/font/a시월구일3.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일4";
+  src: url(/font/a시월구일4.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url(/font/GmarketSansBold.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url(/font/GmarketSansTTFLight.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url(/font/GmarketSansTTFMedium.woff);
+  transform: rotate(0.04deg);
+}
+
+
+/* 메인 이미지 영역 */
+.main {
+  width: 1920px;
+  height: 700px;
+  position: relative;
+  /* margin-bottom: 120px; */
+  margin: auto;
+}
+
+.main img{margin: auto;}
+
+.main .text1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 250px;
+  height: 65px;
+  color: white;
+  font-size: 50px;
+  font-family: "a발레리노";
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* 운휴 정보 (캘린더) */
+.date {
+  width: 1320px;
+  height: 800px;
+  margin: auto;
+  margin-top: 120px;
+  color: #484848;
+  margin-bottom: 50px;
+}
+
+.date .date-info {
+  width: 1320px;
+  height: 250px;
+  border-top: 0.8px solid #989898;
+  border-bottom: 0.8px solid #989898;
+  position: relative;
+  margin: auto;
+}
+
+
+/* 캘린더 모달창 */
+
+.date .date-info .today-date-info {
+  width: 1320px;
+  height: 100px;
+  text-align: center;
+  padding-top: 70px;
+  font-family: "a시월구일2";
+  font-size: 30px;
+  margin: auto;
+}
+.date .date-info .today-time-info {
+  width: 1320px;
+  height: 150px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: "a시월구일3";
+  color: #86bdf0;
+}
+
+.date .hoilday-info {
+  width: 1320px;
+  height: 550px;
+  margin: auto;
+}
+.date .hoilday-info h2 {
+  width: 1320px;
+  height: 120px;
+  text-align: center;
+  padding-top: 60px;
+  font-family: "a시월구일1";
+  font-size: 30px;
+}
+.date .hoilday-info .info-img {
+  width: 1320px;
+  height: 430px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.date .hoilday-info .info-img figure {
+  width: 480px;
+  height: 350px;
+}
+.date .hoilday-info .info-img figure img {
+  width: 480px;
+  height: 300px;
+  border-radius: 15px;
+}
+.date .hoilday-info .info-img figure figcaption {
+  text-align: center;
+  font-family: "GmarketSansMedium";
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+/* 공지사항 영역 */
+.reference {
+  width: 1320px;
+  height: 150px;
+  display: flex;
+  margin: auto;
+  border: 0.8px solid #989898;
+  margin-bottom: 120px;
+}
+.reference .icon-img {
+  margin: 40px 20px 0 10px;
+}
+.reference .icon-img img {
+  width: 100%;
+}
+
+.reference p {
+  font-family: "GmarketSansLight";
+  font-size: 15px;
+  margin-top: 55px;
+}
+
+/* 푸터 영역 */
+footer {
+  width: 1920px;
+  height: 200px;
+  background-color: #434556;
+  color: #d8d8d8;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: auto;
+}
+footer ul li {
+  list-style: none;
+  font-family: gmarket;
+  text-align: center;
+}
+.footer--logo {
+  padding: 20px 0 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.footer--logo img {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+footer span {
+  margin-left: 20px;
+}

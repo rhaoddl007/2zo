@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* 폰트 설정 */
+@font-face {
+  font-family: "a발레리나";
+  src: url(/font/A발레리나.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a발레리노";
+  src: url(/font/A발레리노.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일1";
+  src: url(/font/a시월구일1.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일2";
+  src: url(/font/a시월구일2.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일3";
+  src: url(/font/a시월구일3.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "a시월구일4";
+  src: url(/font/a시월구일4.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url(/font/GmarketSansBold.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url(/font/GmarketSansTTFLight.woff);
+  transform: rotate(0.04deg);
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url(/font/GmarketSansTTFMedium.woff);
+  transform: rotate(0.04deg);
+}
+
+
+/* 지도 영역 */
+.map {
+  width: 1920px;
+  height: 1050px;
+  padding-top: 100px;
+  margin: auto;
+}
+.map .inner {
+  width: 1320px;
+  height: 950px;
+  margin: auto;
+}
+.map .google-map .title {
+  width: 1320px;
+  height: 300px;
+  position: relative;
+}
+.map .google-map .title .title1 {
+  font-family: "a발레리노";
+  font-size: 50px;
+  color: #484848;
+  width: 260px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom: 3px solid #484848;
+  text-align: center;
+}
+.map .google-map iframe {
+  width: 1320px;
+  height: 500px;
+  margin: auto;
+}
+
+/* 지도 버튼 영역 */
+.map .map-btn {
+  width: 1320px;
+  height: 100px;
+  position: relative;
+}
+.map .map-btn .btn {
+  width: 200px;
+  height: 50px;
+  border: 4px solid #86bdf0;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.map .map-btn .btn:hover {
+  box-shadow: 1px 1px 2px #484848;
+}
+.map .map-btn .btn a button {
+  font-family: "GmarketSansMedium";
+  font-size: 15px;
+  color: #86bdf0;
+  width: 192px;
+  height: 42px;
+  text-align: center;
+}
+
+/* 지도 주소 영역 */
+.map .address {
+  width: 1320px;
+  height: 50px;
+}
+.map .address .text {
+  width: 500px;
+  height: 40px;
+  display: flex;
+}
+.map .address .text img {
+  width: 28px;
+  height: 28px;
+}
+.map .address .text p {
+  font-family: "GmarketSansLight";
+  font-size: 15px;
+}
+.map .address .text:hover p {
+  text-decoration: underline;
+}
+
+/* 대중교통 별 오는 길 안내 영역 */
+.transport {
+  width: 1320px;
+  height: 300px;
+  margin: auto;
+}
+.transport .inner {
+  width: 1320px;
+  height: 250px;
+  margin: auto;
+}
+.transport .inner tr {
+  margin-right: 50px;
+}
+.transport .inner tr .title2 {
+  font-family: "a시월구일2";
+  font-size: 22px;
+  color: #484848;
+}
+.transport .inner tr td {
+  font-family: "GmarketSansLight";
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+}
+.transport .inner tr td span {
+  font-family: "GmarketSansMedium";
+}
+
+/* 주차 안내 영역 */
+.parking {
+  width: 1320px;
+  height: 540px;
+  margin: auto;
+  margin-top: 120px;
+  color: #484848;
+  margin-bottom: 100px;
+}
+.parking .inner {
+  width: 1320px;
+  height: 400px;
+}
+.parking .inner,
+tr,
+td,
+th {
+  border: 0.8px solid #989898;
+  border-collapse: collapse;
+}
+.parking .inner caption {
+  text-align: left;
+  font-family: "a시월구일2";
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.parking .inner tr td {
+  text-align: center;
+  font-family: "GmarketSansLight";
+  font-size: 15px;
+}
+.parking .inner tr td span {
+  font-family: "GmarketSansMedium";
+}
+.parking .inner tr .title2 {
+  font-family: "a시월구일2";
+  font-size: 25px;
+}
+.parking .inner tr th {
+  font-family: "GmarketSansMedium";
+  font-size: 16px;
+}
+
+/* 부가설명 영역 */
+.parking .reference {
+  width: 1320px;
+  height: 100px;
+  margin-top: 20px;
+  border: none;
+}
+.parking .reference p {
+  font-family: "GmarketSansLight";
+  font-size: 15px;
+  color: #484848;
+}
+
+/* 푸터 영역 */
+footer {
+  height: 200px;
+  background-color: #434556;
+  color: #d8d8d8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+footer ul li {
+  list-style: none;
+  font-family: gmarket;
+  text-align: center;
+}
+.footer--logo {
+  padding: 20px 0 10px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.footer--logo img {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+footer span {
+  margin-left: 20px;
+}

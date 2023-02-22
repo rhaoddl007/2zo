@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* 달력 기본 설정 */
+#wrap{position: absolute;
+    top: 20px;
+    left: 1000px;
+}
+img,a {
+  display: block;
+}
+
+/* 달력 시작 */
+/* 달력 클릭 상단 */
+.selectBox{width: 92%; display: flex; align-items: center; height: 42px;}
+.selectBox-left{width: 80%; color: #8D9297;}
+.selectBox-right{width: 20%; cursor: pointer; background-color: #8392A7;}
+.selectBox-right:hover{background-color: #68768A;}
+.selectBox-right img{width: 85%;padding:12px 10px 16px 20px}
+
+/* 클릭시 나타나는 달력 */
+.calendarIcon{width: 92%; display: none;}
+.calendarIcon-top{display: flex; background-color: #8392A7; color: #fff; text-align: center; align-items: center;}
+.calendarIcon-top img{width: 10%; padding: 2px; cursor: pointer;}
+.calendarIcon-top img:hover{background-color: #68768A;}
+.calendarIcon-top span{width: 80%;}
+.calendarIcon-content table{width: 100%; text-align: center;}
+.calendarIcon-month{display: none;}
+.calendarIcon-month:first-child{display: table;}
+
+/* 클릭효과 */
+.show{display: table;}
+.hidden{display: none;}
+
+/* 달력 테이블 */
+
+.calendarIcon-content table tr th{color: #8392A7;}
+.calendarIcon-content table tr td{color: #C4BEC2; cursor: pointer;}
+.calendarIcon-content table tr td:hover{background-color: #F0F2F4; color: #8392A7;}
