@@ -364,6 +364,7 @@ h2 {
     max-width: 1920px;
     max-height: 700px;
     margin-bottom: 200px;
+    opacity: 0.9;
 }
 
 .item-main .text-box {
