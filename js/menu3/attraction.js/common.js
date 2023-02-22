@@ -6,7 +6,7 @@ $(document).ready(function () {
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 4000,
         avigationText: ["<span>❮</span>", "<span>❯</span>"]
     })
 });
