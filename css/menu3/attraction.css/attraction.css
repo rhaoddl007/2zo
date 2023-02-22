@@ -60,17 +60,17 @@ em {
 
 @font-face {
         font-family: GmarketL;
-        src: url("/2zo/font/GmarketSansTTFLight.woff");
+        src: url("/font/GmarketSansTTFLight.woff");
 }
 
 @font-face {
         font-family: ball2;
-        src: url("/2zo/font/A발레리노.woff");
+        src: url("/font/A발레리노.woff");
 }
 
 @font-face {
         font-family: swgi1;
-        src: url("/2zo/font/a시월구일1.woff");
+        src: url("/font/a시월구일1.woff");
 }
 
 img {
