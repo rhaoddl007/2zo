@@ -47,17 +47,18 @@
   transform: rotate(0.04deg);
 }
 
-
 /* 메인 이미지 영역 */
 .main {
-  width: 1920px;
-  height: 700px;
+  width: 100vw;
+  height: 36.4583vw;
   position: relative;
-  /* margin-bottom: 120px; */
+  /* margin-bottom: 6.2500vw; */
   margin: auto;
 }
 
-.main img{margin: auto;}
+.main img {
+  margin: auto;
+}
 
 .main .text1 {
   position: absolute;
@@ -66,103 +67,102 @@
   left: 0;
   right: 0;
   margin: auto;
-  width: 250px;
-  height: 65px;
+  width: 13.0208vw;
+  height: 3.3854vw;
   color: white;
-  font-size: 50px;
+  font-size: 2.6042vw;
   font-family: "a발레리노";
   text-align: center;
-  padding-top: 40px;
+  padding-top: 2.0833vw;
 }
 
 /* 운휴 정보 (캘린더) */
 .date {
-  width: 1320px;
-  height: 800px;
+  width: 68.75vw;
+  height: 41.6667vw;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 6.25vw;
   color: #484848;
-  margin-bottom: 50px;
+  margin-bottom: 2.6042vw;
 }
 
 .date .date-info {
-  width: 1320px;
-  height: 250px;
-  border-top: 0.8px solid #989898;
-  border-bottom: 0.8px solid #989898;
+  width: 68.75vw;
+  height: 13.0208vw;
+  border-top: 0.0417vw solid #989898;
+  border-bottom: 0.0417vw solid #989898;
   position: relative;
   margin: auto;
 }
 
-
 /* 캘린더 모달창 */
 
 .date .date-info .today-date-info {
-  width: 1320px;
-  height: 100px;
+  width: 68.75vw;
+  height: 5.2083vw;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 3.6458vw;
   font-family: "a시월구일2";
-  font-size: 30px;
+  font-size: 1.5625vw;
   margin: auto;
 }
 .date .date-info .today-time-info {
-  width: 1320px;
-  height: 150px;
+  width: 68.75vw;
+  height: 7.8125vw;
   text-align: center;
-  padding-top: 20px;
-  font-size: 50px;
+  padding-top: 1.0417vw;
+  font-size: 2.6042vw;
   font-family: "a시월구일3";
   color: #86bdf0;
 }
 
 .date .hoilday-info {
-  width: 1320px;
-  height: 550px;
+  width: 68.75vw;
+  height: 28.6458vw;
   margin: auto;
 }
 .date .hoilday-info h2 {
-  width: 1320px;
-  height: 120px;
+  width: 68.75vw;
+  height: 6.25vw;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 3.125vw;
   font-family: "a시월구일1";
-  font-size: 30px;
+  font-size: 1.5625vw;
 }
 .date .hoilday-info .info-img {
-  width: 1320px;
-  height: 430px;
+  width: 68.75vw;
+  height: 22.3958vw;
   display: flex;
   justify-content: space-around;
-  padding-top: 40px;
+  padding-top: 2.0833vw;
 }
 .date .hoilday-info .info-img figure {
-  width: 480px;
-  height: 350px;
+  width: 25vw;
+  height: 18.2292vw;
 }
 .date .hoilday-info .info-img figure img {
-  width: 480px;
-  height: 300px;
-  border-radius: 15px;
+  width: 25vw;
+  height: 15.625vw;
+  border-radius: 0.7813vw;
 }
 .date .hoilday-info .info-img figure figcaption {
   text-align: center;
   font-family: "GmarketSansMedium";
-  font-size: 20px;
-  padding-top: 15px;
+  font-size: 1.0417vw;
+  padding-top: 0.7813vw;
 }
 
 /* 공지사항 영역 */
 .reference {
-  width: 1320px;
-  height: 150px;
+  width: 68.75vw;
+  height: 7.8125vw;
   display: flex;
   margin: auto;
-  border: 0.8px solid #989898;
-  margin-bottom: 120px;
+  border: 0.0417vw solid #989898;
+  margin-bottom: 6.25vw;
 }
 .reference .icon-img {
-  margin: 40px 20px 0 10px;
+  margin: 2.0833vw 1.0417vw 0 0.5208vw;
 }
 .reference .icon-img img {
   width: 100%;
@@ -170,17 +170,17 @@
 
 .reference p {
   font-family: "GmarketSansLight";
-  font-size: 15px;
-  margin-top: 55px;
+  font-size: 0.7813vw;
+  margin-top: 2.8646vw;
 }
 
 /* 푸터 영역 */
 footer {
-  width: 1920px;
-  height: 200px;
+  width: 100vw;
+  height: 10.4167vw;
   background-color: #434556;
   color: #d8d8d8;
-  font-size: 12px;
+  font-size: 0.625vw;
   line-height: 1.5;
   margin: auto;
 }
@@ -190,7 +190,7 @@ footer ul li {
   text-align: center;
 }
 .footer--logo {
-  padding: 20px 0 10px;
+  padding: 1.0417vw 0 0.5208vw;
   margin-left: 50%;
   transform: translate(-50%);
 }
@@ -199,5 +199,5 @@ footer ul li {
   transform: translate(-50%);
 }
 footer span {
-  margin-left: 20px;
+  margin-left: 1.0417vw;
 }

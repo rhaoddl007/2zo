@@ -29,7 +29,7 @@ $(document).ready(function () {
             .children(".content-text")
             .html();
 
-        $(".modal").css({"display": "block"});
+        $(".modal").css({ "display": "block" });
         $(".modal .inner").fadeIn();
 
         $(".modal .inner .modal-img").attr("src", mainImgSrc);
@@ -62,11 +62,11 @@ function openTabs(el) {
     let country = btnTarget.dataset.country;
 
     tabContent.forEach(function (el) {
-    el.classList.remove("active");
+        el.classList.remove("active");
     });
 
     tabLinks.forEach(function (el) {
-    el.classList.remove("active");
+        el.classList.remove("active");
     });
 
     document.querySelector("#" + country).classList.add("active");

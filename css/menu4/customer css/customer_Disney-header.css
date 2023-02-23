@@ -37,31 +37,31 @@ button {
 /* 헤더 시작 */
 header {
   width: 100%;
-  height: 100px;
-  /* border: 1px solid #333; */
+  height: 5.2083vw;
+  /* border: 0.0521vw solid #333; */
   display: flex;
   position: fixed;
   flex-wrap: wrap;
   overflow: hidden;
   transition: height 0.4s;
   background: linear-gradient(
-    var(--color--) 100px,
-    rgba(255, 255, 255, 0.8) 1px
+    var(--color--) 5.2083vw,
+    rgba(255, 255, 255, 0.8) 0.0521vw
   );
   z-index: 100;
 }
 header .header--logo {
-  /* border:1px solid red; */
-  margin-left: 138px;
-  margin-top: -11px;
+  /* border:0.0521vw solid red; */
+  margin-left: 7.1875vw;
+  margin-top: -0.5729vw;
 }
 
 nav {
-  margin-left: 165px;
-  margin-top: 48px;
+  margin-left: 8.5938vw;
+  margin-top: 2.5vw;
 }
 nav ul li {
-  margin: 0 25px;
+  margin: 0 1.3021vw;
   font-family: GmarketSansMedium;
 }
 nav ul li a {
@@ -71,49 +71,49 @@ nav ul.main--menu {
   display: flex;
 }
 nav ul.main--menu > li:nth-child(1) {
-  margin-left: 50px;
+  margin-left: 2.6042vw;
 }
 .menuname--one {
-  width: 95px;
+  width: 4.9479vw;
   text-align: center;
   margin-left: 50%;
   transform: translate(-50%);
 }
 .menuname--two {
-  width: 105px;
+  width: 5.4688vw;
   text-align: center;
   margin-left: 50%;
   transform: translate(-50%);
 }
 
 .menuname--three {
-  width: 95px;
+  width: 4.9479vw;
   text-align: center;
   margin-left: 50%;
   transform: translate(-50%);
 }
 
 nav ul.main--menu > li > a {
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
+  height: 2.0833vw;
+  line-height: 2.0833vw;
+  font-size: 1.0417vw;
   color: #333;
   display: block;
 }
 nav ul.main--menu > li > a:hover {
-  border-bottom: 5px solid #294083;
+  border-bottom: 0.2604vw solid #294083;
 }
 nav ul.main--menu li ul.sub--menu {
-  margin-top: 12px;
+  margin-top: 0.625vw;
   overflow: hidden;
 }
 nav ul.main--menu li ul.sub--menu li {
-  margin-top: 30px;
+  margin-top: 1.5625vw;
 }
 nav ul.main--menu li ul.sub--menu li a {
   font-family: GmarketSansMedium;
   color: #757575;
-  font-size: 14px;
+  font-size: 0.7292vw;
 }
 nav ul.main--menu li ul.sub--menu li a:hover {
   font-weight: bold;
@@ -124,86 +124,86 @@ nav ul.main--menu li ul.sub--menu li a:hover {
 
 .header--util {
   display: flex;
-  margin-top: 54px;
-  margin-left: 100px;
+  margin-top: 2.8125vw;
+  margin-left: 5.2083vw;
   position: relative;
 }
 .header--util .header--sns {
   display: flex;
   position: absolute;
-  margin-top: -8px;
-  margin-left: 50px;
+  margin-top: -0.4167vw;
+  margin-left: 2.6042vw;
 }
 .header--util .header--sns a:nth-child(3) {
-  margin-top: 7px;
+  margin-top: 0.3646vw;
 }
 .header--util .header--sns a:nth-child(2) {
-  margin: 0 12px;
+  margin: 0 0.625vw;
 }
 
 .header--util button.login--btn {
   position: absolute;
-  margin-left: 280px;
-  margin-top: -4px;
+  margin-left: 14.5833vw;
+  margin-top: -0.2083vw;
 }
 .header--menu-icon {
   position: absolute;
-  margin-left: 355px;
-  margin-top: -4px;
+  margin-left: 18.4896vw;
+  margin-top: -0.2083vw;
 }
 div.util--box {
-  width: 120px;
+  width: 6.25vw;
   position: fixed;
   font-family: GmarketSansMedium;
-  margin-left: 1310px;
-  margin-top: 54px;
-  background: linear-gradient(transparent 46px, var(--color--) 1px);
+  margin-left: 68.2292vw;
+  margin-top: 2.8125vw;
+  background: linear-gradient(transparent 2.3958vw, var(--color--) 0.0521vw);
 }
 .util--box ul {
   z-index: 100;
 }
 .util--box ul button.util--lang {
-  width: 65px;
-  height: 27px;
-  font-size: 20px;
-  margin-right: 44px;
-  margin-left: 36px;
+  width: 3.3854vw;
+  height: 1.4063vw;
+  font-size: 1.0417vw;
+  margin-right: 2.2917vw;
+  margin-left: 1.875vw;
 }
 .util--box ul > li {
   display: none;
   text-align: center;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 0.7813vw;
+  padding-bottom: 0.7813vw;
 }
 .util--box ul:hover > li {
   display: block;
 }
 .util--box ul > li > a {
   color: #666;
-  font-size: 14px;
+  font-size: 0.7292vw;
 }
 .util--box ul > li > a:hover {
   color: #333;
   text-decoration: underline;
 }
 .util--box ul li.util--li1 {
-  margin-top: 50px;
+  margin-top: 2.6042vw;
 }
 
 .util--lang {
   display: flex;
 }
 .util--triangle {
-  margin-top: 6px;
-  margin-left: 5px;
-  width: 0px;
-  height: 0px;
-  border-top: 10px solid #333;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  margin-top: 0.3125vw;
+  margin-left: 0.2604vw;
+  width: 0vw;
+  height: 0vw;
+  border-top: 0.5208vw solid #333;
+  border-left: 0.2604vw solid transparent;
+  border-right: 0.2604vw solid transparent;
 }
 .util--line {
-  height: 25px;
-  border-left: 2px solid #828282;
-  margin-left: 220px;
+  height: 1.3021vw;
+  border-left: 0.1042vw solid #828282;
+  margin-left: 11.4583vw;
 }

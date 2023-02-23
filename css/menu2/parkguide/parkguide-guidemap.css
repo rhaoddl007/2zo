@@ -47,7 +47,9 @@
   transform: rotate(0.04deg);
 }
 
-*{margin: auto;}
+* {
+  margin: auto;
+}
 
 .inner {
   margin: auto;
@@ -55,19 +57,19 @@
 
 /* 가이드맵 영역 */
 .guide-map {
-  width: 1920px;
-  height: 1200px;
-  padding-top: 100px;
+  width: 100vw;
+  height: 62.5vw;
+  padding-top: 5.2083vw;
   margin: auto;
 }
 .guide-map .text1 {
-  width: 1320px;
-  height: 300px;
+  width: 68.75vw;
+  height: 15.625vw;
   position: relative;
 }
 .guide-map .text1 h1 {
-  width: 300px;
-  height: 65px;
+  width: 15.625vw;
+  height: 3.3854vw;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -75,60 +77,60 @@
   right: 0;
   margin: auto;
   font-family: "a발레리노";
-  font-size: 50px;
+  font-size: 2.6042vw;
   color: #484848;
-  border-bottom: 3px solid #484848;
+  border-bottom: 0.1563vw solid #484848;
   text-align: center;
 }
 .guide-map .guide-map-img {
-  width: 1320px;
-  height: 650px;
+  width: 68.75vw;
+  height: 33.8542vw;
   margin: auto;
 }
 
 /* 가이드맵 버튼 영역 */
 .guide-map .btn {
-  width: 1320px;
-  height: 100px;
+  width: 68.75vw;
+  height: 5.2083vw;
   position: relative;
   margin: auto;
 }
 .guide-map .btn a {
-  width: 200px;
-  height: 50px;
+  width: 10.4167vw;
+  height: 2.6042vw;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  border: 4px solid #86bdf0;
-  border-radius: 30px;
+  border: 0.2083vw solid #86bdf0;
+  border-radius: 1.5625vw;
 }
 .guide-map .btn a:hover {
-  box-shadow: 1px 1px 2px #484848;
+  box-shadow: 0.0521vw 0.0521vw 0.1042vw #484848;
 }
 .guide-map .btn a button {
   font-family: "GmarketSansMedium";
-  font-size: 15px;
+  font-size: 0.7813vw;
   color: #86bdf0;
-  width: 192px;
-  height: 42px;
+  width: 10vw;
+  height: 2.1875vw;
   text-align: center;
 }
 
 /* 테마랜드 영역 */
 .themeland {
-  width: 1920px;
-  height: 1600px;
-  margin-top: 20px;
+  width: 100vw;
+  height: 83.3333vw;
+  margin-top: 1.0417vw;
   margin: auto;
 }
 .themeland .text2 {
-  width: 1320px;
-  height: 250px;
+  width: 68.75vw;
+  height: 13.0208vw;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 1.5625vw;
 }
 .themeland .text2 img {
   position: absolute;
@@ -141,21 +143,21 @@
 }
 .themeland .text2 h1 {
   position: absolute;
-  top: 50px;
-  bottom: 0px;
+  top: 2.6042vw;
+  bottom: 0vw;
   left: 0;
   right: 0;
   margin: auto;
-  width: 200px;
-  height: 30px;
-  font-size: 25px;
+  width: 10.4167vw;
+  height: 1.5625vw;
+  font-size: 1.3021vw;
   font-family: "a시월구일1";
   color: white;
   text-align: center;
 }
 .themeland .introduce {
-  width: 1320px;
-  height: 1350px;
+  width: 68.75vw;
+  height: 70.3125vw;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
@@ -163,65 +165,65 @@
   position: relative;
 }
 .themeland .introduce div {
-  width: 380px;
-  height: 350px;
+  width: 19.7917vw;
+  height: 18.2292vw;
 }
 
 /* 테마랜드 이미지 */
 .themeland .introduce div figure {
-  width: 380px;
-  height: 215px;
-  margin-bottom: 10px;
+  width: 19.7917vw;
+  height: 11.1979vw;
+  margin-bottom: 0.5208vw;
 }
 .themeland .introduce div figure img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0.7813vw;
 }
 
 /* 테마랜드 설명 텍스트 */
 .themeland .introduce div figcaption {
-  width: 380px;
-  height: 100px;
+  width: 19.7917vw;
+  height: 5.2083vw;
 }
 .themeland .introduce div figcaption h2 {
   font-family: "a시월구일2";
-  font-size: 20px;
+  font-size: 1.0417vw;
   color: #484848;
-  margin-bottom: 10px;
+  margin-bottom: 0.5208vw;
 }
 .themeland .introduce div figcaption p {
   font-family: "GmarketSansLight";
   color: #484848;
-  font-size: 15px;
+  font-size: 0.7813vw;
 }
 .themeland .introduce div figcaption span {
   font-family: "GmarketSansMedium";
-  font-size: 12px;
+  font-size: 0.625vw;
 }
 
 /* 이벤트 배너 영역 */
 .themeland .introduce .event-banner {
-  width: 850px;
-  height: 250px;
+  width: 44.2708vw;
+  height: 13.0208vw;
   position: absolute;
-  top: 900px;
-  left: 470px;
+  top: 46.875vw;
+  left: 24.4792vw;
 }
 .themeland .introduce .event-banner a img {
-  border-radius: 15px;
+  border-radius: 0.7813vw;
 }
 
 /* 이벤트 배너 모달 */
 .themeland .introduce .popup {
-  width: 850px;
-  height: 215px;
+  width: 44.2708vw;
+  height: 11.1979vw;
   position: relative;
 }
 .themeland .introduce .popup a {
   text-decoration: none;
 }
 .themeland .introduce .popup a span {
-  /* padding: 20px; */
+  /* padding: 1.0417vw; */
   font-weight: bolder;
   color: white;
   transition: 0.3s;
@@ -229,7 +231,7 @@
 }
 
 .themeland .introduce .popup a span img {
-  border-radius: 15px;
+  border-radius: 0.7813vw;
 }
 
 .themeland .introduce .popup a span:hover {
@@ -262,8 +264,8 @@
 }
 
 .themeland .introduce .popup .modal-backgroud .overlay:target {
-  width: 540px;
-  height: 540px;
+  width: 28.125vw;
+  height: 28.125vw;
   top: 0;
   bottom: 0;
   left: 0;
@@ -272,7 +274,7 @@
 }
 .themeland .introduce .popup .modal-backgroud .overlay img {
   height: 100%;
-  border-radius: 15px;
+  border-radius: 0.7813vw;
 }
 .themeland .introduce .popup .modal-backgroud .overlay:target img {
   animation: zoomdanfade 0.5s 1;
@@ -283,12 +285,12 @@
   font-weight: bold;
   color: black;
   position: absolute;
-  top: 15px;
-  font-size: 10px;
-  line-height: 7px;
-  padding: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  top: 0.7813vw;
+  font-size: 0.5208vw;
+  line-height: 0.3646vw;
+  padding: 0.1563vw;
+  border: 0.0521vw solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5208vw;
   background-color: rgba(255, 255, 255, 1);
 }
 .themeland .introduce .popup .modal-backgroud .overlay:target .close {
@@ -309,28 +311,28 @@
 @keyframes slide {
   0% {
     opacity: 0;
-    top: -20px;
+    top: -1.0417vw;
   }
   100% {
     opacty: 0.5;
-    top: 15px;
+    top: 0.7813vw;
   }
 }
 @keyframes slideup {
   0% {
-    bottom: -20px;
+    bottom: -1.0417vw;
   }
   100% {
-    bottom: 20px;
+    bottom: 1.0417vw;
   }
 }
 
 /* 푸터 영역 */
 footer {
-  height: 200px;
+  height: 10.4167vw;
   background-color: #434556;
   color: #d8d8d8;
-  font-size: 12px;
+  font-size: 0.625vw;
   line-height: 1.5;
 }
 footer ul li {
@@ -339,7 +341,7 @@ footer ul li {
   text-align: center;
 }
 .footer--logo {
-  padding: 20px 0 10px;
+  padding: 1.0417vw 0 0.5208vw;
   margin-left: 50%;
   transform: translate(-50%);
 }
@@ -348,5 +350,5 @@ footer ul li {
   transform: translate(-50%);
 }
 footer span {
-  margin-left: 20px;
+  margin-left: 1.0417vw;
 }

@@ -2,423 +2,424 @@
 
 /* 헤더css */
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'GmarketL';
-    src: url("../font/GmarketSansTTFLight.woff");
+  font-family: "GmarketL";
+  src: url("../font/GmarketSansTTFLight.woff");
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 img {
-    display: block;
+  display: block;
 }
 a {
-    display: block;
-    color: black;
+  display: block;
+  color: black;
 }
 button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 :root {
-    --color--: rgba(255, 255, 255, 0.7);
+  --color--: rgba(255, 255, 255, 0.7);
 }
 /* 헤더 시작 */
 header {
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid #333; */
-    display: flex;
-    position: fixed;
-    flex-wrap: wrap;
-    overflow: hidden;
-    transition: height 0.4s;
-    background: linear-gradient(var(--color--) 100px, rgba(255, 255, 255, 0.8) 1px);
-    z-index: 200;
+  width: 100%;
+  height: 5.2083vw;
+  /* border: 0.0521vw solid #333; */
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: height 0.4s;
+  background: linear-gradient(
+    var(--color--) 5.2083vw,
+    rgba(255, 255, 255, 0.8) 0.0521vw
+  );
+  z-index: 200;
 }
 header .header--logo {
-    /* border:1px solid red; */
-    margin-left: 138px;
-    margin-top: -11px;
+  /* border:0.0521vw solid red; */
+  margin-left: 7.1875vw;
+  margin-top: -0.5729vw;
 }
 
 nav {
-    margin-left: 165px;
-    margin-top: 48px;
+  margin-left: 8.5938vw;
+  margin-top: 2.5vw;
 }
 nav ul li {
-    margin: 0 25px;
-    font-family: GmarketSansMedium;
+  margin: 0 1.3021vw;
+  font-family: GmarketSansMedium;
 }
 nav ul li a {
-    text-align: center;
+  text-align: center;
 }
 nav ul.main--menu {
-    display: flex;
+  display: flex;
 }
 nav ul.main--menu > li:nth-child(1) {
-    margin-left: 50px;
+  margin-left: 2.6042vw;
 }
 
 .menuname--one {
-    width: 95px;
-    text-align: center;
-    margin-left: 50%;
-    transform: translate(-50%);
+  width: 4.9479vw;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 .menuname--two {
-    width: 105px;
-    text-align: center;
-    margin-left: 50%;
-    transform: translate(-50%);
+  width: 5.4688vw;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
 .menuname--three {
-    width: 95px;
-    text-align: center;
-    margin-left: 50%;
-    transform: translate(-50%);
+  width: 4.9479vw;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
 nav ul.main--menu > li > a {
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    color: #333;
-    display: block;
+  height: 2.0833vw;
+  line-height: 2.0833vw;
+  font-size: 1.0417vw;
+  color: #333;
+  display: block;
 }
 nav ul.main--menu > li > a:hover {
-    border-bottom: 5px solid #294083;
+  border-bottom: 0.2604vw solid #294083;
 }
 nav ul.main--menu li ul.sub--menu {
-    margin-top: 12px;
-    overflow: hidden;
+  margin-top: 0.625vw;
+  overflow: hidden;
 }
 nav ul.main--menu li ul.sub--menu li {
-    margin-top: 30px;
+  margin-top: 1.5625vw;
 }
 nav ul.main--menu li ul.sub--menu li a {
-    font-family: GmarketSansMedium;
-    color: #757575;
-    font-size: 14px;
+  font-family: GmarketSansMedium;
+  color: #757575;
+  font-size: 0.7292vw;
 }
 nav ul.main--menu li ul.sub--menu li a:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #454545;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #454545;
 }
 
 .header--util {
-    display: flex;
-    margin-top: 54px;
-    margin-left: 100px;
-    position: relative;
+  display: flex;
+  margin-top: 2.8125vw;
+  margin-left: 5.2083vw;
+  position: relative;
 }
 .header--util .header--sns {
-    display: flex;
-    position: absolute;
-    margin-top: -8px;
-    margin-left: 50px;
+  display: flex;
+  position: absolute;
+  margin-top: -0.4167vw;
+  margin-left: 2.6042vw;
 }
 .header--util .header--sns a:nth-child(3) {
-    margin-top: 7px;
+  margin-top: 0.3646vw;
 }
 .header--util .header--sns a:nth-child(2) {
-    margin: 0 12px;
+  margin: 0 0.625vw;
 }
 
 .header--util button.login--btn {
-    position: absolute;
-    margin-left: 280px;
-    margin-top: -4px;
+  position: absolute;
+  margin-left: 14.5833vw;
+  margin-top: -0.2083vw;
 }
 .header--menu-icon {
-    position: absolute;
-    margin-left: 355px;
-    margin-top: -4px;
+  position: absolute;
+  margin-left: 18.4896vw;
+  margin-top: -0.2083vw;
 }
 div.util--box {
-    width: 120px;
-    position: fixed;
-    font-family: GmarketSansMedium;
-    margin-left: 1310px;
-    margin-top: 54px;
-    background: linear-gradient(transparent 46px, var(--color--) 1px);
-
+  width: 6.25vw;
+  position: fixed;
+  font-family: GmarketSansMedium;
+  margin-left: 68.2292vw;
+  margin-top: 2.8125vw;
+  background: linear-gradient(transparent 2.3958vw, var(--color--) 0.0521vw);
 }
 .util--box ul {
-    z-index: 100;
+  z-index: 100;
 }
 .util--box ul button.util--lang {
-    width: 65px;
-    height: 27px;
-    font-size: 20px;
-    margin-right: 44px;
-    margin-left: 36px;
+  width: 3.3854vw;
+  height: 1.4063vw;
+  font-size: 1.0417vw;
+  margin-right: 2.2917vw;
+  margin-left: 1.875vw;
 }
 .util--box ul > li {
-    display: none;
-    text-align: center;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+  display: none;
+  text-align: center;
+  margin-bottom: 0.7813vw;
+  padding-bottom: 0.7813vw;
 }
 .util--box ul:hover > li {
-    display: block;
+  display: block;
 }
 .util--box ul > li > a {
-    color: #666;
-    font-size: 14px;
+  color: #666;
+  font-size: 0.7292vw;
 }
 .util--box ul > li > a:hover {
-    color: #333;
-    text-decoration: underline;
+  color: #333;
+  text-decoration: underline;
 }
 .util--box ul li.util--li1 {
-    margin-top: 50px;
+  margin-top: 2.6042vw;
 }
 
 .util--lang {
-    display: flex;
+  display: flex;
 }
 .util--triangle {
-    margin-top: 6px;
-    margin-left: 5px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid #333;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+  margin-top: 0.3125vw;
+  margin-left: 0.2604vw;
+  width: 0;
+  height: 0;
+  border-top: 0.5208vw solid #333;
+  border-left: 0.2604vw solid transparent;
+  border-right: 0.2604vw solid transparent;
 }
 .util--line {
-    height: 25px;
-    border-left: 2px solid #828282;
-    margin-left: 220px;
+  height: 1.3021vw;
+  border-left: 0.1042vw solid #828282;
+  margin-left: 11.4583vw;
 }
 /* 헤더css end */
 
 /* 레스토랑css */
 @font-face {
-    font-family: Gmarket;
-    src: url("/font/GmarketSansTTFLight.woff");
+  font-family: Gmarket;
+  src: url("/font/GmarketSansTTFLight.woff");
 }
 @font-face {
-    font-family: ball2;
-    src: url("/font/A발레리노.woff");
+  font-family: ball2;
+  src: url("/font/A발레리노.woff");
 }
 @font-face {
-    font-family: swgi1;
-    src: url("/font/a시월구일1.woff");
+  font-family: swgi1;
+  src: url("/font/a시월구일1.woff");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .row {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+  max-width: 62.5vw;
+  width: 100%;
+  margin: auto;
 }
 
 .imx {
-    margin: 0 25px;
+  margin: 0 1.3021vw;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-    font-size: 14px;
+  font-size: 0.7292vw;
 }
 
 h2 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 40px;
-    font-family: swgi1;
-    color: #484848;
+  font-size: 1.5625vw;
+  text-align: center;
+  margin-bottom: 2.0833vw;
+  font-family: swgi1;
+  color: #484848;
 }
 
 .owl-carousel {
-    margin-bottom: 100px;
+  margin-bottom: 5.2083vw;
 }
 
 .owl-carousel .item {
-    text-align: center;
+  text-align: center;
 }
 
 /* 이미지 */
 .owl-carousel .item .img-box {
-    width: 100%;
-    padding-top: 100%;
-    background: #000;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    border: 2px solid #484848;
-    box-shadow: 1px 1px 1px;
-    cursor: pointer;
+  width: 100%;
+  padding-top: 100%;
+  background: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.7813vw;
+  border: 0.1042vw solid #484848;
+  box-shadow: 0.0521vw 0.0521vw 0.0521vw;
+  cursor: pointer;
 }
 
 .content-text {
-    display: none;
+  display: none;
 }
 .map-img {
-    display: none !important;
+  display: none !important;
 }
 .main-img {
-    display: none !important;
+  display: none !important;
 }
 
 /* 이미지 제목 */
 .owl-carousel .item p {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 16px;
-    font-family: Gmarket;
-    font-weight: bold;
-    color: #484848;
+  font-size: 1.0417vw;
+  font-weight: 500;
+  margin-bottom: 0.5208vw;
+  margin-top: 0.8333vw;
+  font-family: Gmarket;
+  font-weight: bold;
+  color: #484848;
 }
 
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
-    display: block;
+  display: block;
 }
 
 .owl-nav span {
-    opacity: 0.4;
-    transition: all 0.3s;
-    font-size: 2em;
+  opacity: 0.4;
+  transition: all 0.3s;
+  font-size: 2em;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover {
-    background: none;
-    color: inherit;
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: inherit;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover span {
-    opacity: 1;
+.owl-theme .owl-nav [class*="owl-"]:hover span {
+  opacity: 1;
 }
 
 .owl-theme .owl-nav {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .owl-nav {
-    height: auto;
-    position: absolute;
-    right: 0;
-    top: -40px;
-    z-index: 10;
-    width: 60px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: -2.0833vw;
+  z-index: 10;
+  width: 3.125vw;
 }
 
 .owl-prev {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 
 .owl-next {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
-    margin: 0;
+.owl-theme .owl-nav [class*="owl-"] {
+  margin: 0;
 }
 
 .footer-text {
-    color: rgb(221, 131, 131);
-    font-weight: bold;
-    float: right;
-    font-size: 12px;
-    margin-bottom: 100px;
+  color: rgb(221, 131, 131);
+  font-weight: bold;
+  float: right;
+  font-size: 0.625vw;
+  margin-bottom: 5.2083vw;
 }
 
 .item-main {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 650px;
-    text-align: center;
-    max-width: 1920px;
-    max-height: 700px;
-    margin-bottom: 200px;
-    opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 33.8542vw;
+  text-align: center;
+  max-width: 100vw;
+  max-height: 36.4583vw;
+  margin-bottom: 10.4167vw;
+  opacity: 0.9;
 }
 
 .item-main .text-box {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 200px;
-    font-size: 50px;
-    font-family: ball2;
-    color: aliceblue;
-
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10.4167vw;
+  font-size: 2.6042vw;
+  font-family: ball2;
+  color: aliceblue;
 }
 
 /* 레스토랑 end */
 
-
 /* 푸터 css */
 #wrap {
-    width: 100%;
-    height: 1200px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 62.5vw;
+  box-sizing: border-box;
 }
 .header {
-    height: 300px;
-    width: 100%;
-    background-color: antiquewhite;
+  height: 15.625vw;
+  width: 100%;
+  background-color: antiquewhite;
 }
 .section {
-    height: 700px;
-    width: 100%;
-    background-color: aqua;
+  height: 36.4583vw;
+  width: 100%;
+  background-color: aqua;
 }
 footer {
-    height: 200px;
-    background-color: #434556;
-    color: #D8D8D8;
-    font-size: 14px;
-    margin-top: 300px;
+  height: 10.4167vw;
+  background-color: #434556;
+  color: #d8d8d8;
+  font-size: 0.7292vw;
+  margin-top: 15.625vw;
 }
 footer ul li {
-    list-style: none;
-    font-family: Gmarket;
-    text-align: center;
-    margin: 10px 0;
-    font-size: 12px;
-    line-height: 1.5;
+  list-style: none;
+  font-family: Gmarket;
+  text-align: center;
+  margin: 0.5208vw 0;
+  font-size: 0.625vw;
+  line-height: 1.5;
 }
 .footer--logo {
-    padding: 20px 0 10px;
+  padding: 1.0417vw 0 0.5208vw;
 }
 footer span {
-    margin-left: 20px;
+  margin-left: 1.0417vw;
 }
 
 .footer--logo img {
@@ -429,112 +430,110 @@ footer span {
 
 /* 모달창 start */
 .modal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0,0.6);
-    padding: 0 16px;
-    display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0 0.8333vw;
+  display: none;
 }
 
 .modal .close-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .modal .inner {
-    padding: 30px;
-    max-width: 700px;
-    width: 100%;
-    margin: auto;
-    background: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 15px;
-    display: none;
+  padding: 1.5625vw;
+  max-width: 36.4583vw;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0.7813vw;
+  display: none;
 }
 
 .modal .inner .modal-img {
-    width: 600px;
-    height: 250px;
-    margin: 0 auto 20px;
-    display: block;
-    border-radius: 15px;
-    border: 2px solid #333;
-    margin-bottom: 20px;
+  width: 31.25vw;
+  height: 13.0208vw;
+  margin: 0 auto 1.0417vw;
+  display: block;
+  border-radius: 0.7813vw;
+  border: 0.1042vw solid #333;
+  margin-bottom: 1.0417vw;
 }
 
 .modal .inner .modal-map {
-    width: 600px;
-    height: 250px;
-    border: 2px solid #333;
-    border-radius: 15px;
-    margin: 0 auto 20px;
+  width: 31.25vw;
+  height: 13.0208vw;
+  border: 0.1042vw solid #333;
+  border-radius: 0.7813vw;
+  margin: 0 auto 1.0417vw;
 }
 
 .modal .inner .modal-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 15px;
-    font-family: swgi1;
+  text-align: center;
+  margin-bottom: 1.5625vw;
+  font-size: 1.3021vw;
+  font-weight: bold;
+  border-radius: 0.7813vw;
+  font-family: swgi1;
 }
 
 .modal .inner .modal-subject {
-    width: 500px;
-    height: 210px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 30px;
-    line-height: 1.8;
-    word-break: keep-all;
-    display: block;
-    font-family: GmarketL;
-    transform: translate(15%);
+  width: 26.0417vw;
+  height: 10.9375vw;
+  font-size: 0.7292vw;
+  font-weight: bold;
+  margin-top: 1.5625vw;
+  line-height: 1.8;
+  word-break: keep-all;
+  display: block;
+  font-family: GmarketL;
+  transform: translate(15%);
 }
 
 .img .map-img {
-    display: none;
+  display: none;
 }
 
 .img .content-text {
-    display: none;
+  display: none;
 }
 
 table.type03 {
-    width: 600px;
-    transform: translate(-9.1%, 0%);
-    border-collapse: collapse;
-    text-align: left;
-    line-height: 1.5;
-    border-top: 1px solid #ccc;
-    border-left: 3px solid #369;
-    font-weight: bold;
+  width: 31.25vw;
+  transform: translate(-9.1%, 0%);
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border-top: 0.0521vw solid #ccc;
+  border-left: 0.1563vw solid #369;
+  font-weight: bold;
 }
 table.type03 th {
-    width: 30px;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    color: #153d73;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    
-
+  width: 1.5625vw;
+  padding: 0.5208vw;
+  font-weight: bold;
+  vertical-align: top;
+  color: #153d73;
+  border-right: 0.0521vw solid #ccc;
+  border-bottom: 0.0521vw solid #ccc;
 }
 table.type03 td {
-    width: 80%;
-    padding: 10px;
-    vertical-align: top;
-    border-right: 3px solid #369;
-    border-bottom: 1px solid #ccc;
+  width: 80%;
+  padding: 0.5208vw;
+  vertical-align: top;
+  border-right: 0.1563vw solid #369;
+  border-bottom: 0.0521vw solid #ccc;
 }
 
 /* 모달창 end */

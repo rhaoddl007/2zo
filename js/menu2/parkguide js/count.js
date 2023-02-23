@@ -19,7 +19,7 @@ function counter($counter, max) {
         const step = now / 10;
 
         now -= step;
-    }, 100); 
+    }, 100);
 }
 
 const $counter2 = document.querySelector("#hour2");
@@ -43,5 +43,5 @@ function counter2($counter2, max2) {
         const step2 = now2 / 10;
 
         now2 -= step2;
-    }, 50); 
+    }, 50);
 }

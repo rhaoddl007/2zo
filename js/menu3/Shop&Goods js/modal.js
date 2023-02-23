@@ -8,7 +8,7 @@ for (var i = 0; i < btn.length; i++) {
         modal = document.querySelector(e.target.getAttribute("href"));
         modal.style.display = "block";
     }
-    
+
     spans[i].onclick = function () {
         for (var index in modals) {
             if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";

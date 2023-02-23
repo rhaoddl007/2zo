@@ -13,77 +13,81 @@ spyEls.forEach(function (spyEl) {
 // 모달창 계산기
 
 // 미키마우스 계산
-let k=0;
+let k = 0;
 function minus1() {
-  if(k>0){
-  k--;
-  document.getElementById("number1").innerHTML=k;
-  let price= k*4500;
-  let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  document.getElementById("total1").innerHTML=`¥ ${result}`;}
+  if (k > 0) {
+    k--;
+    document.getElementById("number1").innerHTML = k;
+    let price = k * 4500;
+    let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    document.getElementById("total1").innerHTML = `¥ ${result}`;
+  }
 }
 
 function plus1() {
-    k++;
-    document.getElementById("number1").innerHTML=k;
-    let price= k*4500;
-  let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  document.getElementById("total1").innerHTML=`¥ ${result}`;
-  }
+  k++;
+  document.getElementById("number1").innerHTML = k;
+  let price = k * 4500;
+  let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById("total1").innerHTML = `¥ ${result}`;
+}
 
 // 미니마우스 계산
-  let l=0;
+let l = 0;
 function minus2() {
-  if(l>0){
+  if (l > 0) {
     l--;
-    document.getElementById("number2").innerHTML=l;
-    let price= l*4500;
-    let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    document.getElementById("total2").innerHTML=`¥ ${result}`;}
+    document.getElementById("number2").innerHTML = l;
+    let price = l * 4500;
+    let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    document.getElementById("total2").innerHTML = `¥ ${result}`;
+  }
 }
 
 function plus2() {
   l++;
-  document.getElementById("number2").innerHTML=l;
-  let price= l*4500;
-let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-document.getElementById("total2").innerHTML=`¥ ${result}`;
-  }
+  document.getElementById("number2").innerHTML = l;
+  let price = l * 4500;
+  let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById("total2").innerHTML = `¥ ${result}`;
+}
 
-  // 도널드덕 계산
-  let m=0;
+// 도널드덕 계산
+let m = 0;
 function minus3() {
-  if(m>0){
+  if (m > 0) {
     m--;
-    document.getElementById("number3").innerHTML=m;
-    let price= m*2800;
-    let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    document.getElementById("total3").innerHTML=`¥ ${result}`;}
+    document.getElementById("number3").innerHTML = m;
+    let price = m * 2800;
+    let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    document.getElementById("total3").innerHTML = `¥ ${result}`;
+  }
 }
 
 function plus3() {
   m++;
-  document.getElementById("number3").innerHTML=m;
-  let price= m*2800;
-let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-document.getElementById("total3").innerHTML=`¥ ${result}`;
-  }
+  document.getElementById("number3").innerHTML = m;
+  let price = m * 2800;
+  let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById("total3").innerHTML = `¥ ${result}`;
+}
 
-  // 머리띠 계산
-  let n=0;
+// 머리띠 계산
+let n = 0;
 function minus4() {
-  if(n>0){
+  if (n > 0) {
     n--;
-    document.getElementById("number4").innerHTML=n;
-    let price= n*1500;
-    let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    document.getElementById("total4").innerHTML=`¥ ${result}`;}
+    document.getElementById("number4").innerHTML = n;
+    let price = n * 1500;
+    let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    document.getElementById("total4").innerHTML = `¥ ${result}`;
+  }
 }
 
 function plus4() {
   n++;
-  document.getElementById("number4").innerHTML=n;
-  let price= n*1500;
-let result= price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-document.getElementById("total4").innerHTML=`¥ ${result}`;
-  }
+  document.getElementById("number4").innerHTML = n;
+  let price = n * 1500;
+  let result = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById("total4").innerHTML = `¥ ${result}`;
+}
