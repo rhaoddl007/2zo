@@ -77,7 +77,7 @@ section.date--ticket > div {
 }
 /* 날짜별 테이블 색 표시 */
 .date__right {
-  padding-left: 690px;
+  padding-left: 600px;
   display: flex;
 }
 .date__right span.box {
@@ -88,6 +88,7 @@ section.date--ticket > div {
   border-radius: 5px;
 }
 .box__text {
+  width: 85px;
   height: 30px;
   line-height: 30px;
 }
