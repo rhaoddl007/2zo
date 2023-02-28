@@ -14,12 +14,12 @@
 }
 @font-face {
   font-family: "GmarketL";
-  src: url(/font/GmarketSansTTFLight.woff);
+  src: url(../font/GmarketSansTTFLight.woff);
 }
 
 @font-face {
   font-family: "Ballerino";
-  src: url(/font/A발레리나.woff);
+  src: url(../font/A발레리나.woff);
 }
 * {
   margin: 0;
@@ -183,7 +183,7 @@ button {
 .info--section {
   margin-top: 17.3438vw;
   position: relative;
-  background-image: url(/imgs/main/info-background-img.svg);
+  background-image: url(../imgs/main/info-background-img.svg);
   width: 100%;
   height: 100vh;
   font-family: "GmarketSansMedium";
@@ -493,13 +493,13 @@ button {
   background-color: #fdf4ea;
 }
 .circle1 {
-  background-image: url(/imgs/main/info-icon\(1\).svg);
+  background-image: url(../imgs/main/info-icon\(1\).svg);
 }
 .circle2 {
-  background-image: url(/imgs/main/info-icon\(2\).svg);
+  background-image: url(../imgs/main/info-icon\(2\).svg);
 }
 .circle3 {
-  background-image: url(/imgs/main/info-icon\(3\).svg);
+  background-image: url(../imgs/main/info-icon\(3\).svg);
   background-repeat: no-repeat;
   background-position: 0.3646vw center;
 }
