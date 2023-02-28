@@ -496,10 +496,10 @@ button {
   background-image: url(../imgs/main/info-icon\(1\).svg);
 }
 .circle2 {
-  background-image: url(../imgs/main/info-icon\(2\).svg);
+  background-image: url(./imgs/main/info-icon\(2\).svg);
 }
 .circle3 {
-  background-image: url(../imgs/main/info-icon\(3\).svg);
+  background-image: url(/imgs/main/info-icon\(3\).svg);
   background-repeat: no-repeat;
   background-position: 0.3646vw center;
 }
